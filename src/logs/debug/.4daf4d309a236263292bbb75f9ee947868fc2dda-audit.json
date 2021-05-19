@@ -1,0 +1,19 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/admin/Downloads/LC-Tech-Challenge/src/logs/debug/.4daf4d309a236263292bbb75f9ee947868fc2dda-audit.json",
+    "files": [
+        {
+            "date": 1621407557775,
+            "name": "/Users/admin/Downloads/LC-Tech-Challenge/src/logs/debug/2021-05-18.log",
+            "hash": "abb8b321bcb66016061dd7d63d01956b"
+        },
+        {
+            "date": 1621407601928,
+            "name": "/Users/admin/Downloads/LC-Tech-Challenge/src/logs/debug/2021-05-19.log",
+            "hash": "7b7e737d463df4c66e7e18348d82e53c"
+        }
+    ]
+}

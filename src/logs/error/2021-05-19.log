@@ -1,0 +1,474 @@
+2021-05-19 04:11:34 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2021-05-19 04:12:12 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2021-05-19 04:13:15 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2021-05-19 04:15:13 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2021-05-19 04:15:20 error: [POST] /login >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2021-05-19 04:22:09 error: [POST] /logout >> StatusCode:: 401, Message:: Wrong authentication token
+2021-05-19 04:22:45 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2021-05-19 04:22:54 error: [POST] /logout >> StatusCode:: 401, Message:: Wrong authentication token
+2021-05-19 06:36:32 error: uncaughtException: Cannot find module '@dtos/users.dto'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+Error: Cannot find module '@dtos/users.dto'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._resolveFilename (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/tsconfig-paths/lib/register.js:75:40)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+2021-05-19 06:38:56 error: [POST] /login >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:39:30 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:39:41 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:39:53 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:43:01 error: uncaughtException: CreateUserDto is not defined
+ReferenceError: CreateUserDto is not defined
+    at UsersRoute.initializeRoutes (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/clients.route.ts:19:59)
+    at new UsersRoute (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/clients.route.ts:13:10)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/server.ts:10:40)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+2021-05-19 06:48:22 error: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/express/lib/router/index.js:510:19)
+    at UsersRoute.initializeRoutes (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/clients.route.ts:17:17)
+    at new UsersRoute (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/clients.route.ts:13:10)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/server.ts:10:40)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+2021-05-19 06:48:24 error: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/express/lib/router/index.js:510:19)
+    at UsersRoute.initializeRoutes (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/clients.route.ts:17:17)
+    at new UsersRoute (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/clients.route.ts:13:10)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/server.ts:10:40)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+2021-05-19 06:48:47 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:48:48 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:50:02 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:50:03 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:50:04 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:50:05 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:50:05 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:50:06 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:51:29 error: [POST] /users >> StatusCode:: 400, Message:: You're not clientData
+2021-05-19 06:51:34 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:52:27 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:52:33 error: [POST] /signup >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:53:50 error: [POST] /signup >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:53:51 error: [POST] /signup >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:53:57 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:54:05 error: [POST] /login >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:54:05 error: [POST] /login >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:54:50 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:54:51 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:56:22 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:57:55 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 07:00:21 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 07:04:17 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 07:04:18 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 10:58:06 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 10:59:43 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:00:25 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:01:51 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:01:52 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:01:52 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:02:16 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:13:29 error: [POST] /login >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:13:32 error: [POST] /logout >> StatusCode:: 401, Message:: Wrong authentication token
+2021-05-19 11:15:05 error: uncaughtException: Cannot find module '@/dtos/clients.dto'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+Error: Cannot find module '@/dtos/clients.dto'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._resolveFilename (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/tsconfig-paths/lib/register.js:75:40)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+2021-05-19 11:15:10 error: uncaughtException: Cannot find module '@/dtos/clients.dto'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+Error: Cannot find module '@/dtos/clients.dto'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._resolveFilename (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/tsconfig-paths/lib/register.js:75:40)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+2021-05-19 11:15:12 error: uncaughtException: Cannot find module '@/dtos/clients.dto'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+Error: Cannot find module '@/dtos/clients.dto'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._resolveFilename (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/tsconfig-paths/lib/register.js:75:40)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+2021-05-19 11:15:20 error: uncaughtException: Cannot find module '@/dtos/clients.dto'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+Error: Cannot find module '@/dtos/clients.dto'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._resolveFilename (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/tsconfig-paths/lib/register.js:75:40)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/auth.route.ts:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+2021-05-19 12:42:37 error: uncaughtException: Class constructor EventModel cannot be invoked without 'new'
+TypeError: Class constructor EventModel cannot be invoked without 'new'
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:12)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/app.ts:12:1)
+2021-05-19 12:43:21 error: uncaughtException: Class constructor EventModel cannot be invoked without 'new'
+TypeError: Class constructor EventModel cannot be invoked without 'new'
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:12)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/app.ts:12:1)
+2021-05-19 12:44:11 error: uncaughtException: Class constructor EventModel cannot be invoked without 'new'
+TypeError: Class constructor EventModel cannot be invoked without 'new'
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:12)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/app.ts:12:1)
+2021-05-19 12:44:15 error: uncaughtException: Class constructor EventModel cannot be invoked without 'new'
+TypeError: Class constructor EventModel cannot be invoked without 'new'
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:12)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/app.ts:12:1)
+2021-05-19 12:45:10 error: uncaughtException: Class constructor EventModel cannot be invoked without 'new'
+TypeError: Class constructor EventModel cannot be invoked without 'new'
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:12)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/app.ts:12:1)
+2021-05-19 12:46:17 error: uncaughtException: Class constructor EventModel cannot be invoked without 'new'
+TypeError: Class constructor EventModel cannot be invoked without 'new'
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:12)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/app.ts:12:1)
+2021-05-19 12:46:28 error: uncaughtException: Class constructor EventModel cannot be invoked without 'new'
+TypeError: Class constructor EventModel cannot be invoked without 'new'
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:12)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/app.ts:12:1)
+2021-05-19 12:46:52 error: uncaughtException: Class constructor EventModel cannot be invoked without 'new'
+TypeError: Class constructor EventModel cannot be invoked without 'new'
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:12)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/app.ts:12:1)
+2021-05-19 12:46:58 error: uncaughtException: Class constructor EventModel cannot be invoked without 'new'
+TypeError: Class constructor EventModel cannot be invoked without 'new'
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:12)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/app.ts:12:1)
+2021-05-19 12:47:19 error: uncaughtException: Class constructor EventModel cannot be invoked without 'new'
+TypeError: Class constructor EventModel cannot be invoked without 'new'
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:12)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/app.ts:12:1)
+2021-05-19 12:47:23 error: uncaughtException: Class constructor EventModel cannot be invoked without 'new'
+TypeError: Class constructor EventModel cannot be invoked without 'new'
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:12)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/app.ts:12:1)
+2021-05-19 12:50:59 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 12:51:55 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 12:52:36 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 12:53:17 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 12:53:22 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 12:54:13 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 13:01:11 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 13:01:43 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 13:01:47 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 13:04:03 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 13:11:29 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 13:11:42 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 13:11:48 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 13:11:53 error: uncaughtException: Cannot read property 'getQueryInterface' of undefined
+TypeError: Cannot read property 'getQueryInterface' of undefined
+    at Function.get queryInterface [as queryInterface] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:55:27)
+    at Function.get queryGenerator [as queryGenerator] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:59:17)
+    at Function.getTableName (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1441:17)
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1009:65
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13469:38
+    at /Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:4967:15
+    at baseForOwn (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:3032:24)
+    at Function.mapValues (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/lodash/lodash.js:13468:7)
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:997:28)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:20:14)
+2021-05-19 13:25:49 error: [GET] /events >> StatusCode:: 500, Message:: Unknown column 'createdAt' in 'field list'
+2021-05-19 13:26:29 error: [GET] /events >> StatusCode:: 500, Message:: Unknown column 'createdAt' in 'field list'
+2021-05-19 13:33:53 error: [GET] /events >> StatusCode:: 500, Message:: Unknown column 'createdAt' in 'field list'

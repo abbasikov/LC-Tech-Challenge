@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/admin/Downloads/PJ/LC-Tech/src/logs/debug/.7b9ad682ecbc9e22e1ebe73b1d7d8eae480654c6-audit.json",
+    "files": [
+        {
+            "date": 1621363404563,
+            "name": "/Users/admin/Downloads/PJ/LC-Tech/src/logs/debug/2021-05-18.log",
+            "hash": "c7156f2770c183ae8048610b41f104f0"
+        }
+    ]
+}

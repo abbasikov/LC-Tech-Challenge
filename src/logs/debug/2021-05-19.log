@@ -1,0 +1,1827 @@
+2021-05-19 00:00:03 info: =================================
+2021-05-19 00:00:03 info: ======= ENV: development =======
+2021-05-19 00:00:03 info: 🚀 App listening on the port 3000
+2021-05-19 00:00:03 info: =================================
+2021-05-19 00:00:03 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 00:00:03 info: 5ms Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 00:00:03 info: 8ms Executed (default): SHOW INDEX FROM `users`
+2021-05-19 00:00:24 info: 3ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel`;
+2021-05-19 00:00:24 info: [0mGET /users [32m200[0m 17.821 ms - 31[0m
+2021-05-19 00:00:24 info: 0ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel`;
+2021-05-19 00:00:24 info: [0mGET /users [36m304[0m 3.489 ms - -[0m
+2021-05-19 00:00:25 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel`;
+2021-05-19 00:00:25 info: [0mGET /users [36m304[0m 2.240 ms - -[0m
+2021-05-19 00:00:25 info: 0ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel`;
+2021-05-19 00:00:25 info: [0mGET /users [36m304[0m 2.240 ms - -[0m
+2021-05-19 04:06:45 info: 3ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel`;
+2021-05-19 04:06:45 info: [0mGET /users [32m200[0m 118.601 ms - 31[0m
+2021-05-19 04:11:34 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2021-05-19 04:11:34 info: [0mPOST /users [33m400[0m 11.748 ms - 63[0m
+2021-05-19 04:12:12 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2021-05-19 04:12:12 info: [0mPOST /users [33m400[0m 7.447 ms - 63[0m
+2021-05-19 04:13:15 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2021-05-19 04:13:15 info: [0mPOST /users [33m400[0m 1.325 ms - 63[0m
+2021-05-19 04:13:59 info: 45ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel` WHERE `UserModel`.`email` = 'umair@gmail.com' LIMIT 1;
+2021-05-19 04:13:59 info: 21ms Executed (default): INSERT INTO `users` (`id`,`email`,`password`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?); "umair@gmail.com", "$2b$10$27Us6YmcNieDWewhL4b89.8X6hK5eDzOUf8XzGaxwhmFhlILt.0sm", "2021-05-19 11:13:59", "2021-05-19 11:13:59"
+2021-05-19 04:13:59 info: [0mPOST /users [32m201[0m 195.554 ms - 215[0m
+2021-05-19 04:15:13 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2021-05-19 04:15:13 info: [0mPOST /users [33m400[0m 1.149 ms - 63[0m
+2021-05-19 04:15:20 error: [POST] /login >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2021-05-19 04:15:20 info: [0mPOST /login [33m400[0m 1.333 ms - 63[0m
+2021-05-19 04:16:20 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel` WHERE `UserModel`.`email` = 'umair@gmail.com' LIMIT 1;
+2021-05-19 04:16:20 info: [0mPOST /login [32m200[0m 96.118 ms - 213[0m
+2021-05-19 04:21:54 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel` WHERE `UserModel`.`id` = 1;
+2021-05-19 04:21:54 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel` WHERE `UserModel`.`email` = 'umair@gmail.com' AND `UserModel`.`password` = '$2b$10$27Us6YmcNieDWewhL4b89.8X6hK5eDzOUf8XzGaxwhmFhlILt.0sm' LIMIT 1;
+2021-05-19 04:21:54 info: [0mPOST /logout [32m200[0m 9.357 ms - 214[0m
+2021-05-19 04:22:09 error: [POST] /logout >> StatusCode:: 401, Message:: Wrong authentication token
+2021-05-19 04:22:09 info: [0mPOST /logout [33m401[0m 3.192 ms - 40[0m
+2021-05-19 04:22:24 info: 8ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel` WHERE `UserModel`.`id` = 1;
+2021-05-19 04:22:24 info: 2ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel` WHERE `UserModel`.`email` = 'umair@gmail.com' AND `UserModel`.`password` = '$2b$10$27Us6YmcNieDWewhL4b89.8X6hK5eDzOUf8XzGaxwhmFhlILt.0sm' LIMIT 1;
+2021-05-19 04:22:24 info: [0mPOST /logout [32m200[0m 15.557 ms - 214[0m
+2021-05-19 04:22:45 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2021-05-19 04:22:45 info: [0mPOST /logout [33m404[0m 1.190 ms - 42[0m
+2021-05-19 04:22:54 error: [POST] /logout >> StatusCode:: 401, Message:: Wrong authentication token
+2021-05-19 04:22:54 info: [0mPOST /logout [33m401[0m 7.671 ms - 40[0m
+2021-05-19 04:23:01 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel` WHERE `UserModel`.`id` = 1;
+2021-05-19 04:23:01 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `UserModel` WHERE `UserModel`.`email` = 'umair@gmail.com' AND `UserModel`.`password` = '$2b$10$27Us6YmcNieDWewhL4b89.8X6hK5eDzOUf8XzGaxwhmFhlILt.0sm' LIMIT 1;
+2021-05-19 04:23:01 info: [0mPOST /logout [32m200[0m 15.870 ms - 214[0m
+2021-05-19 05:30:02 info: =================================
+2021-05-19 05:30:02 info: ======= ENV: development =======
+2021-05-19 05:30:02 info: 🚀 App listening on the port 3000
+2021-05-19 05:30:02 info: =================================
+2021-05-19 05:30:02 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 05:30:02 info: 39ms Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 05:30:02 info: 5ms Executed (default): SHOW INDEX FROM `users`
+2021-05-19 05:30:08 info: =================================
+2021-05-19 05:30:08 info: ======= ENV: development =======
+2021-05-19 05:30:08 info: 🚀 App listening on the port 3000
+2021-05-19 05:30:08 info: =================================
+2021-05-19 05:30:09 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 05:30:09 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 05:30:09 info: 4ms Executed (default): SHOW INDEX FROM `users`
+2021-05-19 05:30:13 info: =================================
+2021-05-19 05:30:13 info: ======= ENV: development =======
+2021-05-19 05:30:13 info: 🚀 App listening on the port 3000
+2021-05-19 05:30:13 info: =================================
+2021-05-19 05:30:13 info: 6ms Executed (default): SELECT 1+1 AS result
+2021-05-19 05:30:13 info: 8ms Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 05:30:13 info: 11ms Executed (default): SHOW INDEX FROM `users`
+2021-05-19 05:30:23 info: =================================
+2021-05-19 05:30:23 info: ======= ENV: development =======
+2021-05-19 05:30:23 info: 🚀 App listening on the port 3000
+2021-05-19 05:30:23 info: =================================
+2021-05-19 05:30:23 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 05:30:23 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 05:30:23 info: 9ms Executed (default): SHOW INDEX FROM `users`
+2021-05-19 05:30:28 info: =================================
+2021-05-19 05:30:28 info: ======= ENV: development =======
+2021-05-19 05:30:28 info: 🚀 App listening on the port 3000
+2021-05-19 05:30:28 info: =================================
+2021-05-19 05:30:28 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 05:30:28 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 05:30:28 info: 6ms Executed (default): SHOW INDEX FROM `users`
+2021-05-19 05:30:45 info: =================================
+2021-05-19 05:30:45 info: ======= ENV: development =======
+2021-05-19 05:30:45 info: 🚀 App listening on the port 3000
+2021-05-19 05:30:45 info: =================================
+2021-05-19 05:30:45 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 05:30:45 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 05:30:45 info: 3ms Executed (default): SHOW INDEX FROM `users`
+2021-05-19 05:33:13 info: =================================
+2021-05-19 05:33:13 info: ======= ENV: development =======
+2021-05-19 05:33:13 info: 🚀 App listening on the port 3000
+2021-05-19 05:33:13 info: =================================
+2021-05-19 05:33:13 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 05:33:13 info: 28ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 05:33:13 info: 7ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 05:33:17 info: =================================
+2021-05-19 05:33:17 info: ======= ENV: development =======
+2021-05-19 05:33:17 info: 🚀 App listening on the port 3000
+2021-05-19 05:33:17 info: =================================
+2021-05-19 05:33:17 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 05:33:17 info: 9ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 05:33:17 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 05:34:40 info: =================================
+2021-05-19 05:34:40 info: ======= ENV: development =======
+2021-05-19 05:34:40 info: 🚀 App listening on the port 3000
+2021-05-19 05:34:40 info: =================================
+2021-05-19 05:34:40 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 05:34:40 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 05:34:40 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 05:34:43 info: =================================
+2021-05-19 05:34:43 info: ======= ENV: development =======
+2021-05-19 05:34:43 info: 🚀 App listening on the port 3000
+2021-05-19 05:34:43 info: =================================
+2021-05-19 05:34:43 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 05:34:43 info: 10ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 05:34:43 info: 9ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 05:35:17 info: =================================
+2021-05-19 05:35:17 info: ======= ENV: development =======
+2021-05-19 05:35:17 info: 🚀 App listening on the port 3000
+2021-05-19 05:35:17 info: =================================
+2021-05-19 05:35:17 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 05:35:17 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 05:35:17 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 05:35:21 info: =================================
+2021-05-19 05:35:21 info: ======= ENV: development =======
+2021-05-19 05:35:21 info: 🚀 App listening on the port 3000
+2021-05-19 05:35:21 info: =================================
+2021-05-19 05:35:21 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 05:35:21 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 05:35:21 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:36:32 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:37:55 info: =================================
+2021-05-19 06:37:55 info: ======= ENV: development =======
+2021-05-19 06:37:55 info: 🚀 App listening on the port 3000
+2021-05-19 06:37:55 info: =================================
+2021-05-19 06:37:55 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:37:55 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:37:55 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:38:56 error: [POST] /login >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:38:56 info: [0mPOST /login [33m400[0m 28.809 ms - 81[0m
+2021-05-19 06:39:30 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:39:30 info: [0mPOST /users [33m400[0m 2.302 ms - 81[0m
+2021-05-19 06:39:41 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:39:41 info: [0mPOST /users [33m400[0m 1.675 ms - 81[0m
+2021-05-19 06:39:49 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `UserModel`;
+2021-05-19 06:39:49 info: [0mGET /users [32m200[0m 15.955 ms - 31[0m
+2021-05-19 06:39:53 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:39:53 info: [0mPOST /users [33m400[0m 1.552 ms - 81[0m
+2021-05-19 06:40:18 info: =================================
+2021-05-19 06:40:18 info: ======= ENV: development =======
+2021-05-19 06:40:18 info: 🚀 App listening on the port 3000
+2021-05-19 06:40:18 info: =================================
+2021-05-19 06:40:19 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:40:19 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:40:19 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:40:30 info: =================================
+2021-05-19 06:40:30 info: ======= ENV: development =======
+2021-05-19 06:40:30 info: 🚀 App listening on the port 3000
+2021-05-19 06:40:30 info: =================================
+2021-05-19 06:40:30 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:40:30 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:40:30 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:40:38 info: =================================
+2021-05-19 06:40:38 info: ======= ENV: development =======
+2021-05-19 06:40:38 info: 🚀 App listening on the port 3000
+2021-05-19 06:40:38 info: =================================
+2021-05-19 06:40:38 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:40:38 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:40:38 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:40:55 info: =================================
+2021-05-19 06:40:55 info: ======= ENV: development =======
+2021-05-19 06:40:55 info: 🚀 App listening on the port 3000
+2021-05-19 06:40:55 info: =================================
+2021-05-19 06:40:55 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:40:55 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:40:55 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:41:05 info: =================================
+2021-05-19 06:41:05 info: ======= ENV: development =======
+2021-05-19 06:41:05 info: 🚀 App listening on the port 3000
+2021-05-19 06:41:05 info: =================================
+2021-05-19 06:41:05 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:41:05 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:41:05 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:41:08 info: =================================
+2021-05-19 06:41:08 info: ======= ENV: development =======
+2021-05-19 06:41:08 info: 🚀 App listening on the port 3000
+2021-05-19 06:41:08 info: =================================
+2021-05-19 06:41:08 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:41:08 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:41:08 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:41:40 info: =================================
+2021-05-19 06:41:40 info: ======= ENV: development =======
+2021-05-19 06:41:40 info: 🚀 App listening on the port 3000
+2021-05-19 06:41:40 info: =================================
+2021-05-19 06:41:40 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:41:40 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:41:40 info: 6ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:42:02 info: =================================
+2021-05-19 06:42:02 info: ======= ENV: development =======
+2021-05-19 06:42:02 info: 🚀 App listening on the port 3000
+2021-05-19 06:42:02 info: =================================
+2021-05-19 06:42:02 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:42:02 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:42:02 info: 5ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:42:21 info: =================================
+2021-05-19 06:42:21 info: ======= ENV: development =======
+2021-05-19 06:42:21 info: 🚀 App listening on the port 3000
+2021-05-19 06:42:21 info: =================================
+2021-05-19 06:42:21 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:42:21 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:42:21 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:42:48 info: =================================
+2021-05-19 06:42:48 info: ======= ENV: development =======
+2021-05-19 06:42:48 info: 🚀 App listening on the port 3000
+2021-05-19 06:42:48 info: =================================
+2021-05-19 06:42:48 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:42:48 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:42:48 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:43:01 info: 0ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:43:18 info: =================================
+2021-05-19 06:43:18 info: ======= ENV: development =======
+2021-05-19 06:43:18 info: 🚀 App listening on the port 3000
+2021-05-19 06:43:18 info: =================================
+2021-05-19 06:43:18 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:43:18 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:43:18 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:43:25 info: =================================
+2021-05-19 06:43:25 info: ======= ENV: development =======
+2021-05-19 06:43:25 info: 🚀 App listening on the port 3000
+2021-05-19 06:43:25 info: =================================
+2021-05-19 06:43:25 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:43:25 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:43:25 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:44:48 info: =================================
+2021-05-19 06:44:48 info: ======= ENV: development =======
+2021-05-19 06:44:48 info: 🚀 App listening on the port 3000
+2021-05-19 06:44:48 info: =================================
+2021-05-19 06:44:48 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:44:48 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:44:48 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:44:54 info: =================================
+2021-05-19 06:44:54 info: ======= ENV: development =======
+2021-05-19 06:44:54 info: 🚀 App listening on the port 3000
+2021-05-19 06:44:54 info: =================================
+2021-05-19 06:44:54 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:44:54 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:44:54 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:45:06 info: =================================
+2021-05-19 06:45:06 info: ======= ENV: development =======
+2021-05-19 06:45:06 info: 🚀 App listening on the port 3000
+2021-05-19 06:45:06 info: =================================
+2021-05-19 06:45:06 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:45:06 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:45:06 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:45:24 info: =================================
+2021-05-19 06:45:24 info: ======= ENV: development =======
+2021-05-19 06:45:24 info: 🚀 App listening on the port 3000
+2021-05-19 06:45:24 info: =================================
+2021-05-19 06:45:24 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:45:24 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:45:24 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:45:29 info: =================================
+2021-05-19 06:45:29 info: ======= ENV: development =======
+2021-05-19 06:45:29 info: 🚀 App listening on the port 3000
+2021-05-19 06:45:29 info: =================================
+2021-05-19 06:45:29 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:45:29 info: 4ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:45:29 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:46:18 info: =================================
+2021-05-19 06:46:18 info: ======= ENV: development =======
+2021-05-19 06:46:18 info: 🚀 App listening on the port 3000
+2021-05-19 06:46:18 info: =================================
+2021-05-19 06:46:18 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:46:18 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:46:18 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:46:47 info: =================================
+2021-05-19 06:46:47 info: ======= ENV: development =======
+2021-05-19 06:46:47 info: 🚀 App listening on the port 3000
+2021-05-19 06:46:47 info: =================================
+2021-05-19 06:46:47 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:46:47 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:46:47 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:47:04 info: =================================
+2021-05-19 06:47:04 info: ======= ENV: development =======
+2021-05-19 06:47:04 info: 🚀 App listening on the port 3000
+2021-05-19 06:47:04 info: =================================
+2021-05-19 06:47:04 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:47:04 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:47:04 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:47:13 info: =================================
+2021-05-19 06:47:13 info: ======= ENV: development =======
+2021-05-19 06:47:13 info: 🚀 App listening on the port 3000
+2021-05-19 06:47:13 info: =================================
+2021-05-19 06:47:13 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:47:13 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:47:13 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:47:29 info: =================================
+2021-05-19 06:47:29 info: ======= ENV: development =======
+2021-05-19 06:47:29 info: 🚀 App listening on the port 3000
+2021-05-19 06:47:29 info: =================================
+2021-05-19 06:47:29 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:47:29 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:47:29 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:47:47 info: =================================
+2021-05-19 06:47:47 info: ======= ENV: development =======
+2021-05-19 06:47:47 info: 🚀 App listening on the port 3000
+2021-05-19 06:47:47 info: =================================
+2021-05-19 06:47:47 info: 3ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:47:47 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:47:47 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:48:22 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:48:24 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:48:39 info: =================================
+2021-05-19 06:48:39 info: ======= ENV: development =======
+2021-05-19 06:48:39 info: 🚀 App listening on the port 3000
+2021-05-19 06:48:39 info: =================================
+2021-05-19 06:48:39 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:48:39 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:48:39 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:48:43 info: =================================
+2021-05-19 06:48:43 info: ======= ENV: development =======
+2021-05-19 06:48:43 info: 🚀 App listening on the port 3000
+2021-05-19 06:48:43 info: =================================
+2021-05-19 06:48:43 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:48:43 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:48:43 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:48:47 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:48:47 info: [0mPOST /users [33m400[0m 19.409 ms - 81[0m
+2021-05-19 06:48:48 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:48:48 info: [0mPOST /users [33m400[0m 2.489 ms - 81[0m
+2021-05-19 06:49:50 info: =================================
+2021-05-19 06:49:50 info: ======= ENV: development =======
+2021-05-19 06:49:50 info: 🚀 App listening on the port 3000
+2021-05-19 06:49:50 info: =================================
+2021-05-19 06:49:50 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:49:50 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:49:50 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:49:59 info: =================================
+2021-05-19 06:49:59 info: ======= ENV: development =======
+2021-05-19 06:49:59 info: 🚀 App listening on the port 3000
+2021-05-19 06:49:59 info: =================================
+2021-05-19 06:49:59 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:49:59 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:49:59 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:50:02 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:50:02 info: [0mPOST /users [33m400[0m 19.752 ms - 81[0m
+2021-05-19 06:50:03 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:50:03 info: [0mPOST /users [33m400[0m 3.252 ms - 81[0m
+2021-05-19 06:50:04 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:50:04 info: [0mPOST /users [33m400[0m 1.385 ms - 81[0m
+2021-05-19 06:50:05 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:50:05 info: [0mPOST /users [33m400[0m 1.851 ms - 81[0m
+2021-05-19 06:50:05 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:50:05 info: [0mPOST /users [33m400[0m 1.830 ms - 81[0m
+2021-05-19 06:50:06 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:50:06 info: [0mPOST /users [33m400[0m 1.455 ms - 81[0m
+2021-05-19 06:51:29 error: [POST] /users >> StatusCode:: 400, Message:: You're not clientData
+2021-05-19 06:51:29 info: [0mPOST /users [33m400[0m 7.985 ms - 35[0m
+2021-05-19 06:51:34 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:51:34 info: [0mPOST /users [33m400[0m 1.551 ms - 81[0m
+2021-05-19 06:52:27 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:52:27 info: [0mPOST /users [33m400[0m 1.322 ms - 81[0m
+2021-05-19 06:52:33 error: [POST] /signup >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:52:33 info: [0mPOST /signup [33m400[0m 1.665 ms - 81[0m
+2021-05-19 06:53:18 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel`;
+2021-05-19 06:53:18 info: [0mGET /users [32m200[0m 8.258 ms - 31[0m
+2021-05-19 06:53:37 info: =================================
+2021-05-19 06:53:37 info: ======= ENV: development =======
+2021-05-19 06:53:37 info: 🚀 App listening on the port 3000
+2021-05-19 06:53:37 info: =================================
+2021-05-19 06:53:37 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:53:37 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:53:37 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:53:47 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel`;
+2021-05-19 06:53:47 info: [0mGET /users [32m200[0m 11.823 ms - 31[0m
+2021-05-19 06:53:48 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel`;
+2021-05-19 06:53:48 info: [0mGET /users [32m200[0m 2.972 ms - 31[0m
+2021-05-19 06:53:50 error: [POST] /signup >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:53:50 info: [0mPOST /signup [33m400[0m 15.763 ms - 81[0m
+2021-05-19 06:53:51 error: [POST] /signup >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:53:51 info: [0mPOST /signup [33m400[0m 1.600 ms - 81[0m
+2021-05-19 06:53:57 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:53:57 info: [0mPOST /users [33m400[0m 2.337 ms - 81[0m
+2021-05-19 06:54:05 error: [POST] /login >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:54:05 info: [0mPOST /login [33m400[0m 1.597 ms - 81[0m
+2021-05-19 06:54:05 error: [POST] /login >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:54:05 info: [0mPOST /login [33m400[0m 1.413 ms - 81[0m
+2021-05-19 06:54:46 info: =================================
+2021-05-19 06:54:46 info: ======= ENV: development =======
+2021-05-19 06:54:46 info: 🚀 App listening on the port 3000
+2021-05-19 06:54:46 info: =================================
+2021-05-19 06:54:47 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:54:47 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:54:47 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:54:50 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:54:50 info: [0mPOST /users [33m400[0m 26.775 ms - 81[0m
+2021-05-19 06:54:51 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:54:51 info: [0mPOST /users [33m400[0m 2.821 ms - 81[0m
+2021-05-19 06:56:13 info: =================================
+2021-05-19 06:56:13 info: ======= ENV: development =======
+2021-05-19 06:56:13 info: 🚀 App listening on the port 3000
+2021-05-19 06:56:13 info: =================================
+2021-05-19 06:56:13 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:56:13 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:56:13 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:56:18 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel`;
+2021-05-19 06:56:18 info: [0mGET /users [36m304[0m 9.900 ms - -[0m
+2021-05-19 06:56:22 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:56:22 info: [0mPOST /users [33m400[0m 15.559 ms - 81[0m
+2021-05-19 06:57:26 info: =================================
+2021-05-19 06:57:26 info: ======= ENV: development =======
+2021-05-19 06:57:26 info: 🚀 App listening on the port 3000
+2021-05-19 06:57:26 info: =================================
+2021-05-19 06:57:26 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:57:26 info: 3ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:57:26 info: 5ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:57:27 info: =================================
+2021-05-19 06:57:27 info: ======= ENV: development =======
+2021-05-19 06:57:27 info: 🚀 App listening on the port 3000
+2021-05-19 06:57:27 info: =================================
+2021-05-19 06:57:27 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:57:27 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:57:27 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:57:50 info: =================================
+2021-05-19 06:57:50 info: ======= ENV: development =======
+2021-05-19 06:57:50 info: 🚀 App listening on the port 3000
+2021-05-19 06:57:50 info: =================================
+2021-05-19 06:57:50 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:57:50 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:57:50 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:57:53 info: =================================
+2021-05-19 06:57:53 info: ======= ENV: development =======
+2021-05-19 06:57:53 info: 🚀 App listening on the port 3000
+2021-05-19 06:57:53 info: =================================
+2021-05-19 06:57:53 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:57:53 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:57:53 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 06:57:55 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 06:57:55 info: [0mPOST /users [33m400[0m 25.357 ms - 81[0m
+2021-05-19 06:59:51 info: =================================
+2021-05-19 06:59:51 info: ======= ENV: development =======
+2021-05-19 06:59:51 info: 🚀 App listening on the port 3000
+2021-05-19 06:59:51 info: =================================
+2021-05-19 06:59:51 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 06:59:51 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 06:59:51 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 07:00:21 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 07:00:21 info: [0mPOST /users [33m400[0m 26.562 ms - 81[0m
+2021-05-19 07:04:07 info: =================================
+2021-05-19 07:04:07 info: ======= ENV: development =======
+2021-05-19 07:04:07 info: 🚀 App listening on the port 3000
+2021-05-19 07:04:07 info: =================================
+2021-05-19 07:04:07 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 07:04:07 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 07:04:07 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 07:04:12 info: =================================
+2021-05-19 07:04:12 info: ======= ENV: development =======
+2021-05-19 07:04:12 info: 🚀 App listening on the port 3000
+2021-05-19 07:04:12 info: =================================
+2021-05-19 07:04:12 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 07:04:12 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 07:04:12 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 07:04:16 info: =================================
+2021-05-19 07:04:16 info: ======= ENV: development =======
+2021-05-19 07:04:16 info: 🚀 App listening on the port 3000
+2021-05-19 07:04:16 info: =================================
+2021-05-19 07:04:16 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 07:04:16 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 07:04:16 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 07:04:17 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 07:04:17 info: [0mPOST /users [33m400[0m 23.347 ms - 81[0m
+2021-05-19 07:04:18 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 07:04:18 info: [0mPOST /users [33m400[0m 3.121 ms - 81[0m
+2021-05-19 10:57:36 info: =================================
+2021-05-19 10:57:36 info: ======= ENV: development =======
+2021-05-19 10:57:36 info: 🚀 App listening on the port 3000
+2021-05-19 10:57:36 info: =================================
+2021-05-19 10:57:36 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 10:57:36 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 10:57:36 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 10:58:06 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 10:58:06 info: [0mPOST /users [33m400[0m 25.243 ms - 81[0m
+2021-05-19 10:59:33 info: =================================
+2021-05-19 10:59:33 info: ======= ENV: development =======
+2021-05-19 10:59:33 info: 🚀 App listening on the port 3000
+2021-05-19 10:59:33 info: =================================
+2021-05-19 10:59:33 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 10:59:33 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 10:59:33 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 10:59:43 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 10:59:43 info: [0mPOST /users [33m400[0m 24.607 ms - 81[0m
+2021-05-19 11:00:20 info: =================================
+2021-05-19 11:00:20 info: ======= ENV: development =======
+2021-05-19 11:00:20 info: 🚀 App listening on the port 3000
+2021-05-19 11:00:20 info: =================================
+2021-05-19 11:00:20 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:00:20 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:00:20 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:00:25 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:00:25 info: [0mPOST /users [33m400[0m 24.345 ms - 81[0m
+2021-05-19 11:01:48 info: =================================
+2021-05-19 11:01:48 info: ======= ENV: development =======
+2021-05-19 11:01:48 info: 🚀 App listening on the port 3000
+2021-05-19 11:01:48 info: =================================
+2021-05-19 11:01:49 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:01:49 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:01:49 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:01:51 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:01:51 info: [0mPOST /users [33m400[0m 23.663 ms - 81[0m
+2021-05-19 11:01:52 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:01:52 info: [0mPOST /users [33m400[0m 2.840 ms - 81[0m
+2021-05-19 11:01:52 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:01:52 info: [0mPOST /users [33m400[0m 2.022 ms - 81[0m
+2021-05-19 11:02:16 error: [POST] /users >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:02:16 info: [0mPOST /users [33m400[0m 3.130 ms - 81[0m
+2021-05-19 11:13:25 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel`;
+2021-05-19 11:13:25 info: [0mGET /users [32m200[0m 8.265 ms - 31[0m
+2021-05-19 11:13:29 error: [POST] /login >> StatusCode:: 400, Message:: property email should not exist, property password should not exist
+2021-05-19 11:13:29 info: [0mPOST /login [33m400[0m 2.008 ms - 81[0m
+2021-05-19 11:13:32 error: [POST] /logout >> StatusCode:: 401, Message:: Wrong authentication token
+2021-05-19 11:13:32 info: [0mPOST /logout [33m401[0m 3.459 ms - 40[0m
+2021-05-19 11:13:47 info: 0ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel`;
+2021-05-19 11:13:47 info: [0mGET /users [32m200[0m 4.372 ms - 31[0m
+2021-05-19 11:15:05 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:15:10 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:15:12 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:15:20 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:15:32 info: =================================
+2021-05-19 11:15:32 info: ======= ENV: development =======
+2021-05-19 11:15:32 info: 🚀 App listening on the port 3000
+2021-05-19 11:15:32 info: =================================
+2021-05-19 11:15:32 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:15:32 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:15:32 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:15:37 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel` WHERE `ClientModel`.`email` = 'umair@gmail.com' LIMIT 1;
+2021-05-19 11:15:37 info: 10ms Executed (default): INSERT INTO `clients` (`id`,`email`,`password`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?); "umair@gmail.com", "$2b$10$WUtRbkAmNaJkCvR..or0iuGAbyHwFKLf2dYh6rIjUmaIivVCGDM9e", "2021-05-19 18:15:37", "2021-05-19 18:15:37"
+2021-05-19 11:15:37 info: [0mPOST /users [32m201[0m 135.313 ms - 215[0m
+2021-05-19 11:15:46 info: =================================
+2021-05-19 11:15:46 info: ======= ENV: development =======
+2021-05-19 11:15:46 info: 🚀 App listening on the port 3000
+2021-05-19 11:15:46 info: =================================
+2021-05-19 11:15:46 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:15:46 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:15:46 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:15:55 info: 2ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel`;
+2021-05-19 11:15:55 info: [0mGET /users [32m200[0m 11.509 ms - 217[0m
+2021-05-19 11:16:07 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel` WHERE `ClientModel`.`email` = 'umair@gmail.com' LIMIT 1;
+2021-05-19 11:16:07 info: [0mPOST /login [32m200[0m 116.597 ms - 213[0m
+2021-05-19 11:17:26 info: 0ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel` WHERE `ClientModel`.`id` = 1;
+2021-05-19 11:17:26 info: 0ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel` WHERE `ClientModel`.`email` = 'umair@gmail.com' AND `ClientModel`.`password` = '$2b$10$WUtRbkAmNaJkCvR..or0iuGAbyHwFKLf2dYh6rIjUmaIivVCGDM9e' LIMIT 1;
+2021-05-19 11:17:26 info: [0mPOST /logout [32m200[0m 10.106 ms - 214[0m
+2021-05-19 11:17:33 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel` WHERE `ClientModel`.`email` = 'umair@gmail.com' LIMIT 1;
+2021-05-19 11:17:33 info: [0mPOST /login [32m200[0m 83.820 ms - 213[0m
+2021-05-19 11:18:06 info: =================================
+2021-05-19 11:18:07 info: ======= ENV: development =======
+2021-05-19 11:18:07 info: 🚀 App listening on the port 3000
+2021-05-19 11:18:07 info: =================================
+2021-05-19 11:18:07 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:18:07 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:18:07 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:18:10 info: =================================
+2021-05-19 11:18:10 info: ======= ENV: development =======
+2021-05-19 11:18:10 info: 🚀 App listening on the port 3000
+2021-05-19 11:18:10 info: =================================
+2021-05-19 11:18:10 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:18:10 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:18:10 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:24:36 info: =================================
+2021-05-19 11:24:36 info: ======= ENV: development =======
+2021-05-19 11:24:36 info: 🚀 App listening on the port 3000
+2021-05-19 11:24:36 info: =================================
+2021-05-19 11:24:36 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:24:36 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:24:36 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:24:47 info: =================================
+2021-05-19 11:24:47 info: ======= ENV: development =======
+2021-05-19 11:24:47 info: 🚀 App listening on the port 3000
+2021-05-19 11:24:47 info: =================================
+2021-05-19 11:24:47 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:24:47 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:24:47 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:24:51 info: =================================
+2021-05-19 11:24:51 info: ======= ENV: development =======
+2021-05-19 11:24:51 info: 🚀 App listening on the port 3000
+2021-05-19 11:24:51 info: =================================
+2021-05-19 11:24:51 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:24:51 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:24:51 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:25:13 info: =================================
+2021-05-19 11:25:13 info: ======= ENV: development =======
+2021-05-19 11:25:13 info: 🚀 App listening on the port 3000
+2021-05-19 11:25:13 info: =================================
+2021-05-19 11:25:13 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:25:13 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:25:13 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:26:54 info: =================================
+2021-05-19 11:26:54 info: ======= ENV: development =======
+2021-05-19 11:26:54 info: 🚀 App listening on the port 3000
+2021-05-19 11:26:54 info: =================================
+2021-05-19 11:26:54 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:26:54 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:26:54 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:28:07 info: =================================
+2021-05-19 11:28:07 info: ======= ENV: development =======
+2021-05-19 11:28:07 info: 🚀 App listening on the port 3000
+2021-05-19 11:28:07 info: =================================
+2021-05-19 11:28:07 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:28:07 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:28:07 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:52:42 info: =================================
+2021-05-19 11:52:42 info: ======= ENV: development =======
+2021-05-19 11:52:42 info: 🚀 App listening on the port 3000
+2021-05-19 11:52:42 info: =================================
+2021-05-19 11:52:42 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:52:42 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:52:42 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:53:36 info: =================================
+2021-05-19 11:53:36 info: ======= ENV: development =======
+2021-05-19 11:53:36 info: 🚀 App listening on the port 3000
+2021-05-19 11:53:36 info: =================================
+2021-05-19 11:53:36 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:53:36 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:53:36 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:53:47 info: =================================
+2021-05-19 11:53:47 info: ======= ENV: development =======
+2021-05-19 11:53:47 info: 🚀 App listening on the port 3000
+2021-05-19 11:53:47 info: =================================
+2021-05-19 11:53:47 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:53:47 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:53:47 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:58:00 info: =================================
+2021-05-19 11:58:00 info: ======= ENV: development =======
+2021-05-19 11:58:00 info: 🚀 App listening on the port 3000
+2021-05-19 11:58:00 info: =================================
+2021-05-19 11:58:00 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:58:00 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:58:00 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:58:02 info: =================================
+2021-05-19 11:58:02 info: ======= ENV: development =======
+2021-05-19 11:58:02 info: 🚀 App listening on the port 3000
+2021-05-19 11:58:02 info: =================================
+2021-05-19 11:58:02 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:58:02 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:58:03 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:58:05 info: =================================
+2021-05-19 11:58:05 info: ======= ENV: development =======
+2021-05-19 11:58:05 info: 🚀 App listening on the port 3000
+2021-05-19 11:58:05 info: =================================
+2021-05-19 11:58:05 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:58:05 info: 8ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:58:05 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:58:11 info: =================================
+2021-05-19 11:58:11 info: ======= ENV: development =======
+2021-05-19 11:58:11 info: 🚀 App listening on the port 3000
+2021-05-19 11:58:11 info: =================================
+2021-05-19 11:58:11 info: 8ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:58:11 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:58:12 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:58:34 info: =================================
+2021-05-19 11:58:34 info: ======= ENV: development =======
+2021-05-19 11:58:34 info: 🚀 App listening on the port 3000
+2021-05-19 11:58:34 info: =================================
+2021-05-19 11:58:34 info: 6ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:58:34 info: 10ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:58:34 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:58:42 info: =================================
+2021-05-19 11:58:42 info: ======= ENV: development =======
+2021-05-19 11:58:42 info: 🚀 App listening on the port 3000
+2021-05-19 11:58:42 info: =================================
+2021-05-19 11:58:42 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:58:42 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:58:42 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:58:49 info: =================================
+2021-05-19 11:58:49 info: ======= ENV: development =======
+2021-05-19 11:58:49 info: 🚀 App listening on the port 3000
+2021-05-19 11:58:49 info: =================================
+2021-05-19 11:58:49 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:58:49 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:58:49 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:59:32 info: =================================
+2021-05-19 11:59:32 info: ======= ENV: development =======
+2021-05-19 11:59:32 info: 🚀 App listening on the port 3000
+2021-05-19 11:59:32 info: =================================
+2021-05-19 11:59:32 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:59:32 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:59:32 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:59:41 info: =================================
+2021-05-19 11:59:41 info: ======= ENV: development =======
+2021-05-19 11:59:41 info: 🚀 App listening on the port 3000
+2021-05-19 11:59:41 info: =================================
+2021-05-19 11:59:41 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:59:41 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:59:41 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:59:55 info: =================================
+2021-05-19 11:59:55 info: ======= ENV: development =======
+2021-05-19 11:59:55 info: 🚀 App listening on the port 3000
+2021-05-19 11:59:55 info: =================================
+2021-05-19 11:59:55 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:59:55 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:59:55 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 11:59:57 info: =================================
+2021-05-19 11:59:57 info: ======= ENV: development =======
+2021-05-19 11:59:57 info: 🚀 App listening on the port 3000
+2021-05-19 11:59:57 info: =================================
+2021-05-19 11:59:58 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 11:59:58 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 11:59:58 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:00:01 info: =================================
+2021-05-19 12:00:01 info: ======= ENV: development =======
+2021-05-19 12:00:01 info: 🚀 App listening on the port 3000
+2021-05-19 12:00:01 info: =================================
+2021-05-19 12:00:01 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:00:01 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:00:01 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:00:10 info: =================================
+2021-05-19 12:00:10 info: ======= ENV: development =======
+2021-05-19 12:00:10 info: 🚀 App listening on the port 3000
+2021-05-19 12:00:10 info: =================================
+2021-05-19 12:00:10 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:00:10 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:00:10 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:00:25 info: =================================
+2021-05-19 12:00:25 info: ======= ENV: development =======
+2021-05-19 12:00:25 info: 🚀 App listening on the port 3000
+2021-05-19 12:00:25 info: =================================
+2021-05-19 12:00:25 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:00:25 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:00:25 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:00:30 info: =================================
+2021-05-19 12:00:30 info: ======= ENV: development =======
+2021-05-19 12:00:30 info: 🚀 App listening on the port 3000
+2021-05-19 12:00:30 info: =================================
+2021-05-19 12:00:30 info: 5ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:00:30 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:00:30 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:01:08 info: =================================
+2021-05-19 12:01:08 info: ======= ENV: development =======
+2021-05-19 12:01:08 info: 🚀 App listening on the port 3000
+2021-05-19 12:01:08 info: =================================
+2021-05-19 12:01:08 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:01:08 info: 42ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:01:08 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:01:10 info: =================================
+2021-05-19 12:01:10 info: ======= ENV: development =======
+2021-05-19 12:01:10 info: 🚀 App listening on the port 3000
+2021-05-19 12:01:10 info: =================================
+2021-05-19 12:01:10 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:01:10 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:01:10 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:01:16 info: =================================
+2021-05-19 12:01:16 info: ======= ENV: development =======
+2021-05-19 12:01:16 info: 🚀 App listening on the port 3000
+2021-05-19 12:01:16 info: =================================
+2021-05-19 12:01:16 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:01:16 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:01:16 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:01:22 info: =================================
+2021-05-19 12:01:22 info: ======= ENV: development =======
+2021-05-19 12:01:22 info: 🚀 App listening on the port 3000
+2021-05-19 12:01:22 info: =================================
+2021-05-19 12:01:22 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:01:22 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:01:22 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:01:25 info: =================================
+2021-05-19 12:01:25 info: ======= ENV: development =======
+2021-05-19 12:01:25 info: 🚀 App listening on the port 3000
+2021-05-19 12:01:25 info: =================================
+2021-05-19 12:01:25 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:01:25 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:01:25 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:01:37 info: =================================
+2021-05-19 12:01:37 info: ======= ENV: development =======
+2021-05-19 12:01:37 info: 🚀 App listening on the port 3000
+2021-05-19 12:01:37 info: =================================
+2021-05-19 12:01:37 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:01:37 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:01:37 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:02:01 info: =================================
+2021-05-19 12:02:01 info: ======= ENV: development =======
+2021-05-19 12:02:01 info: 🚀 App listening on the port 3000
+2021-05-19 12:02:01 info: =================================
+2021-05-19 12:02:01 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:02:01 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:02:01 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:02:08 info: =================================
+2021-05-19 12:02:08 info: ======= ENV: development =======
+2021-05-19 12:02:08 info: 🚀 App listening on the port 3000
+2021-05-19 12:02:08 info: =================================
+2021-05-19 12:02:08 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:02:08 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:02:08 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:02:10 info: =================================
+2021-05-19 12:02:10 info: ======= ENV: development =======
+2021-05-19 12:02:10 info: 🚀 App listening on the port 3000
+2021-05-19 12:02:10 info: =================================
+2021-05-19 12:02:10 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:02:10 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:02:10 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:02:32 info: =================================
+2021-05-19 12:02:32 info: ======= ENV: development =======
+2021-05-19 12:02:32 info: 🚀 App listening on the port 3000
+2021-05-19 12:02:32 info: =================================
+2021-05-19 12:02:32 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:02:32 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:02:32 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:02:42 info: =================================
+2021-05-19 12:02:42 info: ======= ENV: development =======
+2021-05-19 12:02:42 info: 🚀 App listening on the port 3000
+2021-05-19 12:02:42 info: =================================
+2021-05-19 12:02:42 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:02:42 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:02:42 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:03:10 info: =================================
+2021-05-19 12:03:10 info: ======= ENV: development =======
+2021-05-19 12:03:10 info: 🚀 App listening on the port 3000
+2021-05-19 12:03:10 info: =================================
+2021-05-19 12:03:10 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:03:10 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:03:10 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:04:55 info: =================================
+2021-05-19 12:04:55 info: ======= ENV: development =======
+2021-05-19 12:04:55 info: 🚀 App listening on the port 3000
+2021-05-19 12:04:55 info: =================================
+2021-05-19 12:04:55 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:04:55 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:04:55 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:05:05 info: =================================
+2021-05-19 12:05:05 info: ======= ENV: development =======
+2021-05-19 12:05:05 info: 🚀 App listening on the port 3000
+2021-05-19 12:05:05 info: =================================
+2021-05-19 12:05:05 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:05:05 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:05:05 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:05:33 info: =================================
+2021-05-19 12:05:33 info: ======= ENV: development =======
+2021-05-19 12:05:33 info: 🚀 App listening on the port 3000
+2021-05-19 12:05:33 info: =================================
+2021-05-19 12:05:33 info: 5ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:05:33 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:05:33 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:05:42 info: =================================
+2021-05-19 12:05:42 info: ======= ENV: development =======
+2021-05-19 12:05:42 info: 🚀 App listening on the port 3000
+2021-05-19 12:05:42 info: =================================
+2021-05-19 12:05:43 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:05:43 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:05:43 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:10:44 info: =================================
+2021-05-19 12:10:44 info: ======= ENV: development =======
+2021-05-19 12:10:44 info: 🚀 App listening on the port 3000
+2021-05-19 12:10:44 info: =================================
+2021-05-19 12:10:44 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:10:44 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:10:44 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:10:46 info: =================================
+2021-05-19 12:10:46 info: ======= ENV: development =======
+2021-05-19 12:10:46 info: 🚀 App listening on the port 3000
+2021-05-19 12:10:46 info: =================================
+2021-05-19 12:10:46 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:10:46 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:10:46 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:15:06 info: =================================
+2021-05-19 12:15:06 info: ======= ENV: development =======
+2021-05-19 12:15:06 info: 🚀 App listening on the port 3000
+2021-05-19 12:15:06 info: =================================
+2021-05-19 12:15:06 info: 5ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:15:06 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:15:06 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:15:24 info: =================================
+2021-05-19 12:15:24 info: ======= ENV: development =======
+2021-05-19 12:15:24 info: 🚀 App listening on the port 3000
+2021-05-19 12:15:24 info: =================================
+2021-05-19 12:15:24 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:15:24 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:15:24 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:15:28 info: =================================
+2021-05-19 12:15:28 info: ======= ENV: development =======
+2021-05-19 12:15:28 info: 🚀 App listening on the port 3000
+2021-05-19 12:15:28 info: =================================
+2021-05-19 12:15:28 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:15:28 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:15:28 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:17:01 info: =================================
+2021-05-19 12:17:01 info: ======= ENV: development =======
+2021-05-19 12:17:01 info: 🚀 App listening on the port 3000
+2021-05-19 12:17:01 info: =================================
+2021-05-19 12:17:01 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:17:01 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:17:01 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:17:22 info: =================================
+2021-05-19 12:17:22 info: ======= ENV: development =======
+2021-05-19 12:17:22 info: 🚀 App listening on the port 3000
+2021-05-19 12:17:22 info: =================================
+2021-05-19 12:17:22 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:17:22 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:17:22 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:17:30 info: =================================
+2021-05-19 12:17:30 info: ======= ENV: development =======
+2021-05-19 12:17:30 info: 🚀 App listening on the port 3000
+2021-05-19 12:17:30 info: =================================
+2021-05-19 12:17:30 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:17:30 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:17:30 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:17:43 info: =================================
+2021-05-19 12:17:43 info: ======= ENV: development =======
+2021-05-19 12:17:43 info: 🚀 App listening on the port 3000
+2021-05-19 12:17:43 info: =================================
+2021-05-19 12:17:43 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:17:43 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:17:43 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:19:35 info: =================================
+2021-05-19 12:19:35 info: ======= ENV: development =======
+2021-05-19 12:19:35 info: 🚀 App listening on the port 3000
+2021-05-19 12:19:35 info: =================================
+2021-05-19 12:19:35 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:19:35 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:19:35 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:19:45 info: =================================
+2021-05-19 12:19:45 info: ======= ENV: development =======
+2021-05-19 12:19:45 info: 🚀 App listening on the port 3000
+2021-05-19 12:19:45 info: =================================
+2021-05-19 12:19:45 info: 6ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:19:45 info: 10ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:19:45 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:19:57 info: =================================
+2021-05-19 12:19:57 info: ======= ENV: development =======
+2021-05-19 12:19:57 info: 🚀 App listening on the port 3000
+2021-05-19 12:19:57 info: =================================
+2021-05-19 12:19:57 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:19:57 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:19:57 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:20:06 info: =================================
+2021-05-19 12:20:06 info: ======= ENV: development =======
+2021-05-19 12:20:06 info: 🚀 App listening on the port 3000
+2021-05-19 12:20:06 info: =================================
+2021-05-19 12:20:06 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:20:06 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:20:06 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:21:18 info: =================================
+2021-05-19 12:21:18 info: ======= ENV: development =======
+2021-05-19 12:21:18 info: 🚀 App listening on the port 3000
+2021-05-19 12:21:18 info: =================================
+2021-05-19 12:21:18 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:21:18 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:21:18 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:21:20 info: =================================
+2021-05-19 12:21:20 info: ======= ENV: development =======
+2021-05-19 12:21:20 info: 🚀 App listening on the port 3000
+2021-05-19 12:21:20 info: =================================
+2021-05-19 12:21:20 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:21:20 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:21:20 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:21:58 info: =================================
+2021-05-19 12:21:58 info: ======= ENV: development =======
+2021-05-19 12:21:58 info: 🚀 App listening on the port 3000
+2021-05-19 12:21:58 info: =================================
+2021-05-19 12:21:58 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:21:58 info: 3ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:21:58 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:22:01 info: =================================
+2021-05-19 12:22:01 info: ======= ENV: development =======
+2021-05-19 12:22:01 info: 🚀 App listening on the port 3000
+2021-05-19 12:22:01 info: =================================
+2021-05-19 12:22:01 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:22:01 info: 8ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:22:01 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:23:10 info: =================================
+2021-05-19 12:23:10 info: ======= ENV: development =======
+2021-05-19 12:23:10 info: 🚀 App listening on the port 3000
+2021-05-19 12:23:10 info: =================================
+2021-05-19 12:23:10 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:23:10 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:23:10 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:23:35 info: =================================
+2021-05-19 12:23:35 info: ======= ENV: development =======
+2021-05-19 12:23:35 info: 🚀 App listening on the port 3000
+2021-05-19 12:23:35 info: =================================
+2021-05-19 12:23:35 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:23:35 info: 8ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:23:35 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:23:46 info: =================================
+2021-05-19 12:23:46 info: ======= ENV: development =======
+2021-05-19 12:23:46 info: 🚀 App listening on the port 3000
+2021-05-19 12:23:46 info: =================================
+2021-05-19 12:23:46 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:23:46 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:23:46 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:23:50 info: =================================
+2021-05-19 12:23:50 info: ======= ENV: development =======
+2021-05-19 12:23:50 info: 🚀 App listening on the port 3000
+2021-05-19 12:23:50 info: =================================
+2021-05-19 12:23:50 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:23:50 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:23:50 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:25:41 info: =================================
+2021-05-19 12:25:41 info: ======= ENV: development =======
+2021-05-19 12:25:41 info: 🚀 App listening on the port 3000
+2021-05-19 12:25:41 info: =================================
+2021-05-19 12:25:41 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:25:41 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:25:41 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:26:11 info: =================================
+2021-05-19 12:26:11 info: ======= ENV: development =======
+2021-05-19 12:26:11 info: 🚀 App listening on the port 3000
+2021-05-19 12:26:11 info: =================================
+2021-05-19 12:26:11 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:26:11 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:26:11 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:26:22 info: =================================
+2021-05-19 12:26:22 info: ======= ENV: development =======
+2021-05-19 12:26:22 info: 🚀 App listening on the port 3000
+2021-05-19 12:26:22 info: =================================
+2021-05-19 12:26:22 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:26:22 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:26:22 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:26:26 info: =================================
+2021-05-19 12:26:26 info: ======= ENV: development =======
+2021-05-19 12:26:26 info: 🚀 App listening on the port 3000
+2021-05-19 12:26:26 info: =================================
+2021-05-19 12:26:26 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:26:26 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:26:26 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:26:33 info: =================================
+2021-05-19 12:26:33 info: ======= ENV: development =======
+2021-05-19 12:26:33 info: 🚀 App listening on the port 3000
+2021-05-19 12:26:33 info: =================================
+2021-05-19 12:26:33 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:26:33 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:26:33 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:26:37 info: =================================
+2021-05-19 12:26:37 info: ======= ENV: development =======
+2021-05-19 12:26:37 info: 🚀 App listening on the port 3000
+2021-05-19 12:26:37 info: =================================
+2021-05-19 12:26:37 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:26:37 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:26:37 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:26:42 info: =================================
+2021-05-19 12:26:42 info: ======= ENV: development =======
+2021-05-19 12:26:42 info: 🚀 App listening on the port 3000
+2021-05-19 12:26:42 info: =================================
+2021-05-19 12:26:42 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:26:42 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:26:42 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:27:29 info: =================================
+2021-05-19 12:27:29 info: ======= ENV: development =======
+2021-05-19 12:27:29 info: 🚀 App listening on the port 3000
+2021-05-19 12:27:29 info: =================================
+2021-05-19 12:27:29 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:27:29 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:27:29 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:27:38 info: =================================
+2021-05-19 12:27:38 info: ======= ENV: development =======
+2021-05-19 12:27:38 info: 🚀 App listening on the port 3000
+2021-05-19 12:27:38 info: =================================
+2021-05-19 12:27:38 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:27:38 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:27:38 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:28:42 info: =================================
+2021-05-19 12:28:42 info: ======= ENV: development =======
+2021-05-19 12:28:42 info: 🚀 App listening on the port 3000
+2021-05-19 12:28:42 info: =================================
+2021-05-19 12:28:42 info: 3ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:28:42 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:28:42 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:28:50 info: =================================
+2021-05-19 12:28:50 info: ======= ENV: development =======
+2021-05-19 12:28:50 info: 🚀 App listening on the port 3000
+2021-05-19 12:28:50 info: =================================
+2021-05-19 12:28:50 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:28:50 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:28:50 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:28:58 info: =================================
+2021-05-19 12:28:58 info: ======= ENV: development =======
+2021-05-19 12:28:58 info: 🚀 App listening on the port 3000
+2021-05-19 12:28:58 info: =================================
+2021-05-19 12:28:58 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:28:58 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:28:58 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:29:03 info: =================================
+2021-05-19 12:29:03 info: ======= ENV: development =======
+2021-05-19 12:29:03 info: 🚀 App listening on the port 3000
+2021-05-19 12:29:03 info: =================================
+2021-05-19 12:29:03 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:29:03 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:29:03 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:29:17 info: =================================
+2021-05-19 12:29:17 info: ======= ENV: development =======
+2021-05-19 12:29:17 info: 🚀 App listening on the port 3000
+2021-05-19 12:29:17 info: =================================
+2021-05-19 12:29:17 info: 5ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:29:17 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:29:17 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:29:24 info: =================================
+2021-05-19 12:29:24 info: ======= ENV: development =======
+2021-05-19 12:29:24 info: 🚀 App listening on the port 3000
+2021-05-19 12:29:24 info: =================================
+2021-05-19 12:29:24 info: 5ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:29:24 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:29:24 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:29:33 info: =================================
+2021-05-19 12:29:33 info: ======= ENV: development =======
+2021-05-19 12:29:33 info: 🚀 App listening on the port 3000
+2021-05-19 12:29:33 info: =================================
+2021-05-19 12:29:33 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:29:33 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:29:33 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:29:46 info: =================================
+2021-05-19 12:29:46 info: ======= ENV: development =======
+2021-05-19 12:29:46 info: 🚀 App listening on the port 3000
+2021-05-19 12:29:46 info: =================================
+2021-05-19 12:29:46 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:29:46 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:29:46 info: 2ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:29:57 info: =================================
+2021-05-19 12:29:57 info: ======= ENV: development =======
+2021-05-19 12:29:57 info: 🚀 App listening on the port 3000
+2021-05-19 12:29:57 info: =================================
+2021-05-19 12:29:57 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:29:57 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:29:57 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:30:06 info: =================================
+2021-05-19 12:30:06 info: ======= ENV: development =======
+2021-05-19 12:30:06 info: 🚀 App listening on the port 3000
+2021-05-19 12:30:06 info: =================================
+2021-05-19 12:30:06 info: 5ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:30:06 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:30:06 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:30:08 info: =================================
+2021-05-19 12:30:08 info: ======= ENV: development =======
+2021-05-19 12:30:08 info: 🚀 App listening on the port 3000
+2021-05-19 12:30:08 info: =================================
+2021-05-19 12:30:08 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:30:08 info: 5ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:30:08 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:30:14 info: =================================
+2021-05-19 12:30:14 info: ======= ENV: development =======
+2021-05-19 12:30:14 info: 🚀 App listening on the port 3000
+2021-05-19 12:30:14 info: =================================
+2021-05-19 12:30:14 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:30:14 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:30:14 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:30:29 info: =================================
+2021-05-19 12:30:29 info: ======= ENV: development =======
+2021-05-19 12:30:29 info: 🚀 App listening on the port 3000
+2021-05-19 12:30:29 info: =================================
+2021-05-19 12:30:29 info: 5ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:30:29 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:30:29 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:30:41 info: =================================
+2021-05-19 12:30:41 info: ======= ENV: development =======
+2021-05-19 12:30:41 info: 🚀 App listening on the port 3000
+2021-05-19 12:30:41 info: =================================
+2021-05-19 12:30:41 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:30:41 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:30:41 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:30:52 info: =================================
+2021-05-19 12:30:52 info: ======= ENV: development =======
+2021-05-19 12:30:52 info: 🚀 App listening on the port 3000
+2021-05-19 12:30:52 info: =================================
+2021-05-19 12:30:52 info: 5ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:30:52 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:30:52 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:31:09 info: =================================
+2021-05-19 12:31:09 info: ======= ENV: development =======
+2021-05-19 12:31:09 info: 🚀 App listening on the port 3000
+2021-05-19 12:31:09 info: =================================
+2021-05-19 12:31:09 info: 5ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:31:09 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:31:09 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:32:04 info: =================================
+2021-05-19 12:32:04 info: ======= ENV: development =======
+2021-05-19 12:32:04 info: 🚀 App listening on the port 3000
+2021-05-19 12:32:04 info: =================================
+2021-05-19 12:32:04 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:32:04 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:32:04 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:32:09 info: =================================
+2021-05-19 12:32:09 info: ======= ENV: development =======
+2021-05-19 12:32:09 info: 🚀 App listening on the port 3000
+2021-05-19 12:32:09 info: =================================
+2021-05-19 12:32:09 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:32:09 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:32:09 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:32:34 info: =================================
+2021-05-19 12:32:34 info: ======= ENV: development =======
+2021-05-19 12:32:34 info: 🚀 App listening on the port 3000
+2021-05-19 12:32:34 info: =================================
+2021-05-19 12:32:34 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:32:34 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:32:34 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:33:02 info: =================================
+2021-05-19 12:33:02 info: ======= ENV: development =======
+2021-05-19 12:33:02 info: 🚀 App listening on the port 3000
+2021-05-19 12:33:02 info: =================================
+2021-05-19 12:33:02 info: 5ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:33:02 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:33:02 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:33:08 info: =================================
+2021-05-19 12:33:08 info: ======= ENV: development =======
+2021-05-19 12:33:08 info: 🚀 App listening on the port 3000
+2021-05-19 12:33:08 info: =================================
+2021-05-19 12:33:08 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:33:08 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:33:08 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:33:14 info: =================================
+2021-05-19 12:33:14 info: ======= ENV: development =======
+2021-05-19 12:33:14 info: 🚀 App listening on the port 3000
+2021-05-19 12:33:14 info: =================================
+2021-05-19 12:33:14 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:33:14 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:33:14 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:33:16 info: =================================
+2021-05-19 12:33:16 info: ======= ENV: development =======
+2021-05-19 12:33:16 info: 🚀 App listening on the port 3000
+2021-05-19 12:33:16 info: =================================
+2021-05-19 12:33:16 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:33:16 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:33:16 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:33:30 info: =================================
+2021-05-19 12:33:30 info: ======= ENV: development =======
+2021-05-19 12:33:30 info: 🚀 App listening on the port 3000
+2021-05-19 12:33:30 info: =================================
+2021-05-19 12:33:30 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:33:30 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:33:30 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:34:06 info: =================================
+2021-05-19 12:34:06 info: ======= ENV: development =======
+2021-05-19 12:34:06 info: 🚀 App listening on the port 3000
+2021-05-19 12:34:06 info: =================================
+2021-05-19 12:34:06 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:34:06 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:34:06 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:34:22 info: =================================
+2021-05-19 12:34:22 info: ======= ENV: development =======
+2021-05-19 12:34:22 info: 🚀 App listening on the port 3000
+2021-05-19 12:34:22 info: =================================
+2021-05-19 12:34:22 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:34:22 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:34:22 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:34:31 info: =================================
+2021-05-19 12:34:31 info: ======= ENV: development =======
+2021-05-19 12:34:31 info: 🚀 App listening on the port 3000
+2021-05-19 12:34:31 info: =================================
+2021-05-19 12:34:31 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:34:31 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:34:31 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:34:58 info: =================================
+2021-05-19 12:34:58 info: ======= ENV: development =======
+2021-05-19 12:34:58 info: 🚀 App listening on the port 3000
+2021-05-19 12:34:58 info: =================================
+2021-05-19 12:34:58 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:34:58 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:34:58 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:37:35 info: =================================
+2021-05-19 12:37:35 info: ======= ENV: development =======
+2021-05-19 12:37:35 info: 🚀 App listening on the port 3000
+2021-05-19 12:37:35 info: =================================
+2021-05-19 12:37:35 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:37:35 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:37:35 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:37:48 info: =================================
+2021-05-19 12:37:48 info: ======= ENV: development =======
+2021-05-19 12:37:48 info: 🚀 App listening on the port 3000
+2021-05-19 12:37:48 info: =================================
+2021-05-19 12:37:48 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:37:48 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:37:48 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:37:56 info: =================================
+2021-05-19 12:37:56 info: ======= ENV: development =======
+2021-05-19 12:37:56 info: 🚀 App listening on the port 3000
+2021-05-19 12:37:56 info: =================================
+2021-05-19 12:37:56 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:37:56 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:37:56 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:38:08 info: =================================
+2021-05-19 12:38:08 info: ======= ENV: development =======
+2021-05-19 12:38:08 info: 🚀 App listening on the port 3000
+2021-05-19 12:38:08 info: =================================
+2021-05-19 12:38:08 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:38:08 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:38:08 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:38:14 info: =================================
+2021-05-19 12:38:14 info: ======= ENV: development =======
+2021-05-19 12:38:14 info: 🚀 App listening on the port 3000
+2021-05-19 12:38:14 info: =================================
+2021-05-19 12:38:14 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:38:14 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:38:14 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:38:57 info: =================================
+2021-05-19 12:38:57 info: ======= ENV: development =======
+2021-05-19 12:38:57 info: 🚀 App listening on the port 3000
+2021-05-19 12:38:57 info: =================================
+2021-05-19 12:38:57 info: 5ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:38:57 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:38:57 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:40:51 info: =================================
+2021-05-19 12:40:51 info: ======= ENV: development =======
+2021-05-19 12:40:51 info: 🚀 App listening on the port 3000
+2021-05-19 12:40:51 info: =================================
+2021-05-19 12:40:51 info: 4ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:40:51 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:40:51 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:42:05 info: =================================
+2021-05-19 12:42:05 info: ======= ENV: development =======
+2021-05-19 12:42:05 info: 🚀 App listening on the port 3000
+2021-05-19 12:42:05 info: =================================
+2021-05-19 12:42:05 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:42:05 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:42:05 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:42:37 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:43:22 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:44:11 info: 0ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:44:15 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:45:10 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:46:17 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:46:28 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:46:52 info: 0ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:46:58 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:47:19 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:47:23 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:48:03 info: =================================
+2021-05-19 12:48:03 info: ======= ENV: development =======
+2021-05-19 12:48:03 info: 🚀 App listening on the port 3000
+2021-05-19 12:48:03 info: =================================
+2021-05-19 12:48:03 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:48:03 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:48:03 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:48:03 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `StartTime` DATETIME NOT NULL, `EndTime` DATETIME NOT NULL, `Description` VARCHAR(256) NOT NULL, `Title` VARCHAR(256) NOT NULL, `LocationID` NUMBER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`LocationID`) REFERENCES `locations` (`id`)) ENGINE=InnoDB;
+2021-05-19 12:48:22 info: =================================
+2021-05-19 12:48:22 info: ======= ENV: development =======
+2021-05-19 12:48:22 info: 🚀 App listening on the port 3000
+2021-05-19 12:48:22 info: =================================
+2021-05-19 12:48:22 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:48:22 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:48:22 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:48:22 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `StartTime` DATETIME NOT NULL, `EndTime` DATETIME NOT NULL, `Description` VARCHAR(256) NOT NULL, `Title` VARCHAR(256) NOT NULL, `LocationID` NUMBER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`LocationID`) REFERENCES `locations` (`id`)) ENGINE=InnoDB;
+2021-05-19 12:48:25 info: =================================
+2021-05-19 12:48:25 info: ======= ENV: development =======
+2021-05-19 12:48:25 info: 🚀 App listening on the port 3000
+2021-05-19 12:48:25 info: =================================
+2021-05-19 12:48:25 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:48:25 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:48:25 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 12:48:25 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `StartTime` DATETIME NOT NULL, `EndTime` DATETIME NOT NULL, `Description` VARCHAR(256) NOT NULL, `Title` VARCHAR(256) NOT NULL, `LocationID` NUMBER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`LocationID`) REFERENCES `locations` (`id`)) ENGINE=InnoDB;
+2021-05-19 12:50:59 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:51:55 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:52:36 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:53:17 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:53:22 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:54:13 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:58:15 info: =================================
+2021-05-19 12:58:15 info: ======= ENV: development =======
+2021-05-19 12:58:15 info: 🚀 App listening on the port 3000
+2021-05-19 12:58:15 info: =================================
+2021-05-19 12:58:15 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 12:58:15 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 12:58:15 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:00:16 info: =================================
+2021-05-19 13:00:16 info: ======= ENV: development =======
+2021-05-19 13:00:16 info: 🚀 App listening on the port 3000
+2021-05-19 13:00:16 info: =================================
+2021-05-19 13:00:16 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:00:16 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:00:16 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:00:20 info: =================================
+2021-05-19 13:00:20 info: ======= ENV: development =======
+2021-05-19 13:00:20 info: 🚀 App listening on the port 3000
+2021-05-19 13:00:20 info: =================================
+2021-05-19 13:00:20 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:00:20 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:00:20 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:00:24 info: =================================
+2021-05-19 13:00:24 info: ======= ENV: development =======
+2021-05-19 13:00:24 info: 🚀 App listening on the port 3000
+2021-05-19 13:00:24 info: =================================
+2021-05-19 13:00:24 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:00:24 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:00:24 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:00:27 info: =================================
+2021-05-19 13:00:27 info: ======= ENV: development =======
+2021-05-19 13:00:27 info: 🚀 App listening on the port 3000
+2021-05-19 13:00:27 info: =================================
+2021-05-19 13:00:27 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:00:27 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:00:27 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:01:11 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:01:43 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:01:47 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:04:03 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:04:10 info: =================================
+2021-05-19 13:04:10 info: ======= ENV: development =======
+2021-05-19 13:04:10 info: 🚀 App listening on the port 3000
+2021-05-19 13:04:10 info: =================================
+2021-05-19 13:04:10 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:04:10 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:04:10 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:04:10 info: 0ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `StartTime` VARCHAR(255) NOT NULL, `EndTime` VARCHAR(255) NOT NULL, `Description` VARCHAR(256) NOT NULL, `Title` VARCHAR(256) NOT NULL, `LocationID` NUMBER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:04:16 info: =================================
+2021-05-19 13:04:16 info: ======= ENV: development =======
+2021-05-19 13:04:16 info: 🚀 App listening on the port 3000
+2021-05-19 13:04:16 info: =================================
+2021-05-19 13:04:16 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:04:16 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:04:16 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:04:16 info: 0ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `StartTime` VARCHAR(255) NOT NULL, `EndTime` VARCHAR(255) NOT NULL, `Description` VARCHAR(256) NOT NULL, `Title` VARCHAR(256) NOT NULL, `LocationID` NUMBER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:05:06 info: =================================
+2021-05-19 13:05:06 info: ======= ENV: development =======
+2021-05-19 13:05:06 info: 🚀 App listening on the port 3000
+2021-05-19 13:05:06 info: =================================
+2021-05-19 13:05:06 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:05:06 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:05:06 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:05:06 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `StartTime` VARCHAR(255), `EndTime` VARCHAR(255), `Description` VARCHAR(256), `Title` VARCHAR(256), `LocationID` NUMBER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:05:16 info: =================================
+2021-05-19 13:05:16 info: ======= ENV: development =======
+2021-05-19 13:05:16 info: 🚀 App listening on the port 3000
+2021-05-19 13:05:16 info: =================================
+2021-05-19 13:05:16 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:05:16 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:05:16 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:05:16 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `StartTime` VARCHAR(255), `EndTime` VARCHAR(255), `Description` VARCHAR(256), `Title` VARCHAR(256), `LocationID` NUMBER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:05:20 info: =================================
+2021-05-19 13:05:20 info: ======= ENV: development =======
+2021-05-19 13:05:20 info: 🚀 App listening on the port 3000
+2021-05-19 13:05:20 info: =================================
+2021-05-19 13:05:20 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:05:20 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:05:20 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:05:20 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `StartTime` VARCHAR(255), `EndTime` VARCHAR(255), `Description` VARCHAR(256), `Title` VARCHAR(256), `LocationID` NUMBER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:06:05 info: =================================
+2021-05-19 13:06:05 info: ======= ENV: development =======
+2021-05-19 13:06:05 info: 🚀 App listening on the port 3000
+2021-05-19 13:06:05 info: =================================
+2021-05-19 13:06:05 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:06:05 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:06:05 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:06:05 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` VARCHAR(255), `EndTime` VARCHAR(255), `Description` VARCHAR(256), `Title` VARCHAR(256), `LocationID` NUMBER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:06:14 info: =================================
+2021-05-19 13:06:14 info: ======= ENV: development =======
+2021-05-19 13:06:14 info: 🚀 App listening on the port 3000
+2021-05-19 13:06:14 info: =================================
+2021-05-19 13:06:14 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:06:14 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:06:14 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:06:14 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` VARCHAR(255), `EndTime` VARCHAR(255), `Description` VARCHAR(256), `Title` VARCHAR(256), `LocationID` NUMBER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:06:18 info: =================================
+2021-05-19 13:06:18 info: ======= ENV: development =======
+2021-05-19 13:06:18 info: 🚀 App listening on the port 3000
+2021-05-19 13:06:18 info: =================================
+2021-05-19 13:06:18 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:06:18 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:06:18 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:06:18 info: 0ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` VARCHAR(255), `EndTime` VARCHAR(255), `Description` VARCHAR(256), `Title` VARCHAR(256), `LocationID` NUMBER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:07:54 info: =================================
+2021-05-19 13:07:54 info: ======= ENV: development =======
+2021-05-19 13:07:54 info: 🚀 App listening on the port 3000
+2021-05-19 13:07:54 info: =================================
+2021-05-19 13:07:54 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:07:54 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:07:54 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:07:54 info: 0ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT, `EndTime` TEXT, `Description` TEXT, `Title` TEXT, `LocationID` NUMBER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:08:23 info: =================================
+2021-05-19 13:08:23 info: ======= ENV: development =======
+2021-05-19 13:08:23 info: 🚀 App listening on the port 3000
+2021-05-19 13:08:23 info: =================================
+2021-05-19 13:08:23 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:08:23 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:08:23 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:08:23 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT, `EndTime` TEXT, `Description` TEXT, `Title` TEXT, `LocationID` NUMBER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:08:30 info: =================================
+2021-05-19 13:08:30 info: ======= ENV: development =======
+2021-05-19 13:08:30 info: 🚀 App listening on the port 3000
+2021-05-19 13:08:30 info: =================================
+2021-05-19 13:08:30 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:08:30 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:08:30 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:08:30 info: 0ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT, `EndTime` TEXT, `Description` TEXT, `Title` TEXT, `LocationID` NUMBER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:10:47 info: =================================
+2021-05-19 13:10:47 info: ======= ENV: development =======
+2021-05-19 13:10:47 info: 🚀 App listening on the port 3000
+2021-05-19 13:10:47 info: =================================
+2021-05-19 13:10:48 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:10:48 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:10:48 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:10:48 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT, `EndTime` TEXT, `Description` TEXT, `Title` TEXT, `LocationID` INTEGER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:10:48 info: 4ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:11:29 info: 0ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:11:42 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:11:48 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:11:53 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:12:05 info: =================================
+2021-05-19 13:12:05 info: ======= ENV: development =======
+2021-05-19 13:12:05 info: 🚀 App listening on the port 3000
+2021-05-19 13:12:05 info: =================================
+2021-05-19 13:12:05 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:12:05 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:12:05 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:12:05 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:12:05 info: 3ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:12:12 info: =================================
+2021-05-19 13:12:12 info: ======= ENV: development =======
+2021-05-19 13:12:12 info: 🚀 App listening on the port 3000
+2021-05-19 13:12:12 info: =================================
+2021-05-19 13:12:12 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:12:12 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:12:12 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:12:12 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:12:12 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:12:37 info: =================================
+2021-05-19 13:12:37 info: ======= ENV: development =======
+2021-05-19 13:12:37 info: 🚀 App listening on the port 3000
+2021-05-19 13:12:37 info: =================================
+2021-05-19 13:12:37 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:12:37 info: 3ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:12:37 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:12:37 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:12:37 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:12:51 info: =================================
+2021-05-19 13:12:51 info: ======= ENV: development =======
+2021-05-19 13:12:51 info: 🚀 App listening on the port 3000
+2021-05-19 13:12:51 info: =================================
+2021-05-19 13:12:51 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:12:51 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:12:51 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:12:51 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:12:51 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:13:55 info: =================================
+2021-05-19 13:13:55 info: ======= ENV: development =======
+2021-05-19 13:13:55 info: 🚀 App listening on the port 3000
+2021-05-19 13:13:55 info: =================================
+2021-05-19 13:13:55 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:13:55 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:13:55 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:13:55 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:13:55 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:14:14 info: =================================
+2021-05-19 13:14:14 info: ======= ENV: development =======
+2021-05-19 13:14:14 info: 🚀 App listening on the port 3000
+2021-05-19 13:14:14 info: =================================
+2021-05-19 13:14:14 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:14:14 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:14:14 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:14:14 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:14:14 info: 1ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:14:23 info: =================================
+2021-05-19 13:14:23 info: ======= ENV: development =======
+2021-05-19 13:14:23 info: 🚀 App listening on the port 3000
+2021-05-19 13:14:23 info: =================================
+2021-05-19 13:14:24 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:14:24 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:14:24 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:14:24 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:14:24 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:16:33 info: =================================
+2021-05-19 13:16:33 info: ======= ENV: development =======
+2021-05-19 13:16:33 info: 🚀 App listening on the port 3000
+2021-05-19 13:16:33 info: =================================
+2021-05-19 13:16:33 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:16:33 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:16:33 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:16:33 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:16:33 info: 1ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:16:42 info: =================================
+2021-05-19 13:16:42 info: ======= ENV: development =======
+2021-05-19 13:16:42 info: 🚀 App listening on the port 3000
+2021-05-19 13:16:42 info: =================================
+2021-05-19 13:16:42 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:16:42 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:16:42 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:16:42 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:16:42 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:17:20 info: =================================
+2021-05-19 13:17:20 info: ======= ENV: development =======
+2021-05-19 13:17:20 info: 🚀 App listening on the port 3000
+2021-05-19 13:17:20 info: =================================
+2021-05-19 13:17:20 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:17:20 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:17:20 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:17:20 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:17:20 info: 3ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:17:28 info: =================================
+2021-05-19 13:17:28 info: ======= ENV: development =======
+2021-05-19 13:17:28 info: 🚀 App listening on the port 3000
+2021-05-19 13:17:28 info: =================================
+2021-05-19 13:17:28 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:17:28 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:17:28 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:17:28 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:17:28 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:17:32 info: =================================
+2021-05-19 13:17:32 info: ======= ENV: development =======
+2021-05-19 13:17:32 info: 🚀 App listening on the port 3000
+2021-05-19 13:17:32 info: =================================
+2021-05-19 13:17:32 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:17:32 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:17:32 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:17:32 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:17:32 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:18:07 info: =================================
+2021-05-19 13:18:07 info: ======= ENV: development =======
+2021-05-19 13:18:07 info: 🚀 App listening on the port 3000
+2021-05-19 13:18:07 info: =================================
+2021-05-19 13:18:07 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:18:07 info: 4ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:18:07 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:18:07 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:18:07 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:19:25 info: =================================
+2021-05-19 13:19:25 info: ======= ENV: development =======
+2021-05-19 13:19:25 info: 🚀 App listening on the port 3000
+2021-05-19 13:19:25 info: =================================
+2021-05-19 13:19:25 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:19:25 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:19:25 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:19:25 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:19:25 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:19:54 info: [0mGET /events [33m404[0m 4.884 ms - 145[0m
+2021-05-19 13:20:03 info: [0mGET /events [33m404[0m 0.999 ms - 145[0m
+2021-05-19 13:20:48 info: =================================
+2021-05-19 13:20:48 info: ======= ENV: development =======
+2021-05-19 13:20:48 info: 🚀 App listening on the port 3000
+2021-05-19 13:20:48 info: =================================
+2021-05-19 13:20:48 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:20:48 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:20:48 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:20:48 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:20:48 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:20:52 info: [0mGET /events [33m404[0m 5.058 ms - 145[0m
+2021-05-19 13:20:53 info: [0mGET /events [33m404[0m 1.136 ms - 145[0m
+2021-05-19 13:20:54 info: [0mGET /events [33m404[0m 0.600 ms - 145[0m
+2021-05-19 13:20:55 info: [0mGET /events [33m404[0m 0.554 ms - 145[0m
+2021-05-19 13:21:03 info: =================================
+2021-05-19 13:21:03 info: ======= ENV: development =======
+2021-05-19 13:21:03 info: 🚀 App listening on the port 3000
+2021-05-19 13:21:03 info: =================================
+2021-05-19 13:21:03 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:21:03 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:21:03 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:21:03 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:21:03 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:21:26 info: [0mGET /events [33m404[0m 5.732 ms - 145[0m
+2021-05-19 13:21:32 info: 1ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel`;
+2021-05-19 13:21:32 info: [0mGET /users [32m200[0m 11.814 ms - 220[0m
+2021-05-19 13:25:44 info: =================================
+2021-05-19 13:25:44 info: ======= ENV: development =======
+2021-05-19 13:25:44 info: 🚀 App listening on the port 3000
+2021-05-19 13:25:44 info: =================================
+2021-05-19 13:25:44 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:25:44 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:25:44 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:25:44 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:25:44 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:25:49 info: 1ms Executed (default): SELECT `ID`, `StartTime`, `EndTime`, `Description`, `Title`, `LocationID`, `createdAt`, `updatedAt` FROM `events` AS `EventModel`;
+2021-05-19 13:25:49 error: [GET] /events >> StatusCode:: 500, Message:: Unknown column 'createdAt' in 'field list'
+2021-05-19 13:25:49 info: [0mGET /events [31m500[0m 10.056 ms - 56[0m
+2021-05-19 13:26:22 info: =================================
+2021-05-19 13:26:22 info: ======= ENV: development =======
+2021-05-19 13:26:22 info: 🚀 App listening on the port 3000
+2021-05-19 13:26:22 info: =================================
+2021-05-19 13:26:22 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:26:22 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:26:22 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:26:22 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:26:22 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:26:29 info: 1ms Executed (default): SELECT `ID`, `StartTime`, `EndTime`, `Description`, `Title`, `LocationID`, `createdAt`, `updatedAt` FROM `events` AS `EventModel`;
+2021-05-19 13:26:29 error: [GET] /events >> StatusCode:: 500, Message:: Unknown column 'createdAt' in 'field list'
+2021-05-19 13:26:29 info: [0mGET /events [31m500[0m 8.610 ms - 56[0m
+2021-05-19 13:27:19 info: =================================
+2021-05-19 13:27:19 info: ======= ENV: development =======
+2021-05-19 13:27:19 info: 🚀 App listening on the port 3000
+2021-05-19 13:27:19 info: =================================
+2021-05-19 13:27:20 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:27:20 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:27:20 info: 5ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:27:20 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:27:20 info: 3ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:27:23 info: =================================
+2021-05-19 13:27:23 info: ======= ENV: development =======
+2021-05-19 13:27:23 info: 🚀 App listening on the port 3000
+2021-05-19 13:27:23 info: =================================
+2021-05-19 13:27:23 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:27:23 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:27:23 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:27:24 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:27:24 info: 1ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:27:42 info: =================================
+2021-05-19 13:27:42 info: ======= ENV: development =======
+2021-05-19 13:27:42 info: 🚀 App listening on the port 3000
+2021-05-19 13:27:42 info: =================================
+2021-05-19 13:27:42 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:27:42 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:27:42 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:27:42 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:27:42 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:28:07 info: =================================
+2021-05-19 13:28:07 info: ======= ENV: development =======
+2021-05-19 13:28:07 info: 🚀 App listening on the port 3000
+2021-05-19 13:28:07 info: =================================
+2021-05-19 13:28:07 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:28:07 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:28:07 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:28:07 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:28:07 info: 3ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:32:09 info: =================================
+2021-05-19 13:32:09 info: ======= ENV: development =======
+2021-05-19 13:32:09 info: 🚀 App listening on the port 3000
+2021-05-19 13:32:09 info: =================================
+2021-05-19 13:32:09 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:32:09 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:32:09 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:32:09 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:32:09 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:32:14 info: 2ms Executed (default): SELECT `Title`, `Description` FROM `events` AS `EventModel`;
+2021-05-19 13:32:14 info: [0mGET /events [32m200[0m 11.384 ms - 486[0m
+2021-05-19 13:33:12 info: =================================
+2021-05-19 13:33:12 info: ======= ENV: development =======
+2021-05-19 13:33:12 info: 🚀 App listening on the port 3000
+2021-05-19 13:33:12 info: =================================
+2021-05-19 13:33:12 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:33:12 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:33:12 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:33:12 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:33:12 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:33:16 info: =================================
+2021-05-19 13:33:16 info: ======= ENV: development =======
+2021-05-19 13:33:16 info: 🚀 App listening on the port 3000
+2021-05-19 13:33:16 info: =================================
+2021-05-19 13:33:16 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:33:16 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:33:16 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:33:16 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:33:16 info: 1ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:33:23 info: 1ms Executed (default): SELECT `Title`, `Description` FROM `events` AS `EventModel`;
+2021-05-19 13:33:23 info: [0mGET /events [32m200[0m 11.282 ms - 486[0m
+2021-05-19 13:33:50 info: =================================
+2021-05-19 13:33:50 info: ======= ENV: development =======
+2021-05-19 13:33:50 info: 🚀 App listening on the port 3000
+2021-05-19 13:33:50 info: =================================
+2021-05-19 13:33:50 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:33:50 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:33:50 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:33:50 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:33:50 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:33:53 info: 1ms Executed (default): SELECT `ID`, `StartTime`, `EndTime`, `Description`, `Title`, `LocationID`, `createdAt`, `updatedAt` FROM `events` AS `EventModel`;
+2021-05-19 13:33:53 error: [GET] /events >> StatusCode:: 500, Message:: Unknown column 'createdAt' in 'field list'
+2021-05-19 13:33:53 info: [0mGET /events [31m500[0m 10.461 ms - 56[0m
+2021-05-19 13:35:44 info: =================================
+2021-05-19 13:35:44 info: ======= ENV: development =======
+2021-05-19 13:35:44 info: 🚀 App listening on the port 3000
+2021-05-19 13:35:44 info: =================================
+2021-05-19 13:35:44 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:35:44 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:35:44 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:35:44 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:35:44 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:35:53 info: =================================
+2021-05-19 13:35:53 info: ======= ENV: development =======
+2021-05-19 13:35:53 info: 🚀 App listening on the port 3000
+2021-05-19 13:35:53 info: =================================
+2021-05-19 13:35:53 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:35:53 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:35:53 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:35:53 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:35:53 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:36:26 info: =================================
+2021-05-19 13:36:26 info: ======= ENV: development =======
+2021-05-19 13:36:26 info: 🚀 App listening on the port 3000
+2021-05-19 13:36:26 info: =================================
+2021-05-19 13:36:26 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:36:26 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:36:26 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:36:26 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:36:26 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:36:31 info: 2ms Executed (default): SELECT `Title`, `Description`, `StartTime`, `EndTime`, `LocationID` FROM `events` AS `EventModel`;
+2021-05-19 13:36:31 info: [0mGET /events [32m200[0m 20.424 ms - -[0m
+2021-05-19 13:43:37 info: =================================
+2021-05-19 13:43:37 info: ======= ENV: development =======
+2021-05-19 13:43:37 info: 🚀 App listening on the port 3000
+2021-05-19 13:43:37 info: =================================
+2021-05-19 13:43:37 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:43:37 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:43:37 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:43:37 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:43:37 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:43:41 info: =================================
+2021-05-19 13:43:41 info: ======= ENV: development =======
+2021-05-19 13:43:41 info: 🚀 App listening on the port 3000
+2021-05-19 13:43:41 info: =================================
+2021-05-19 13:43:41 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:43:41 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:43:41 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:43:41 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:43:41 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:44:00 info: =================================
+2021-05-19 13:44:00 info: ======= ENV: development =======
+2021-05-19 13:44:00 info: 🚀 App listening on the port 3000
+2021-05-19 13:44:00 info: =================================
+2021-05-19 13:44:00 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:44:00 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:44:00 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:44:00 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:44:00 info: 1ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:45:02 info: =================================
+2021-05-19 13:45:02 info: ======= ENV: development =======
+2021-05-19 13:45:02 info: 🚀 App listening on the port 3000
+2021-05-19 13:45:02 info: =================================
+2021-05-19 13:45:02 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:45:02 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:45:02 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:45:02 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:45:02 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:45:13 info: =================================
+2021-05-19 13:45:13 info: ======= ENV: development =======
+2021-05-19 13:45:13 info: 🚀 App listening on the port 3000
+2021-05-19 13:45:13 info: =================================
+2021-05-19 13:45:13 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-19 13:45:13 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-19 13:45:13 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-19 13:45:13 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`ID` INTEGER auto_increment , `StartTime` TEXT NOT NULL, `EndTime` TEXT NOT NULL, `Description` TEXT NOT NULL, `Title` TEXT NOT NULL, `LocationID` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`ID`)) ENGINE=InnoDB;
+2021-05-19 13:45:13 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-19 13:45:25 info: 2ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel`;
+2021-05-19 13:45:25 info: [0mGET /users [32m200[0m 14.912 ms - 220[0m
+2021-05-19 13:45:26 info: 0ms Executed (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `clients` AS `ClientModel`;
+2021-05-19 13:45:26 info: [0mGET /users [32m200[0m 3.156 ms - 220[0m
+2021-05-19 13:45:29 info: 2ms Executed (default): SELECT `Title`, `Description`, `StartTime`, `EndTime`, `LocationID` FROM `events` AS `EventModel`;
+2021-05-19 13:45:29 info: [0mGET /events [32m200[0m 6.873 ms - -[0m
