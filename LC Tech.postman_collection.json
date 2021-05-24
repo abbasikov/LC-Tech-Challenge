@@ -35,13 +35,15 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/logout",
+							"raw": "http://localhost:3000/api/v1/logout",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
+								"api",
+								"v1",
 								"logout"
 							]
 						}
@@ -51,42 +53,217 @@
 			]
 		},
 		{
-			"name": "Get users",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/users",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"users"
-					]
+			"name": "Events",
+			"item": [
+				{
+					"name": "Get Events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/events",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"events"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Get Events",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/events",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"events"
-					]
+			"name": "Locations",
+			"item": [
+				{
+					"name": "Get Locations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/locations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"locations"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
+		},
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "Get clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get clients asset",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/clients/2000/asset/4000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"clients",
+								"2000",
+								"asset",
+								"4000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get clients all assets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/clients/2000/assets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"clients",
+								"2000",
+								"assets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get clients all assets by time",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAwMCwiaWF0IjoxNjIxODg1MjU3LCJleHAiOjE2MjE4ODg4NTd9.lRkCUj1HhSwtHg-cLoLE4M361S9eBTW06bNCwGhin50",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/clients/2000/assets/2021-05-01T12:29:54+0000/2021-05-01T13:35:54+0000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"clients",
+								"2000",
+								"assets",
+								"2021-05-01T12:29:54+0000",
+								"2021-05-01T13:35:54+0000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assets",
+			"item": [
+				{
+					"name": "Post Asset",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAwMCwiaWF0IjoxNjIxODkxNDA3LCJleHAiOjE2MjE4OTUwMDd9.du-WD7Pph3LiGZvbqdDy5CG7NWdcieBI079cQWiFQjA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "live_stream_id",
+									"value": "9bb50372-5b50-443d-8e23-9d8cf4a3befa",
+									"type": "text"
+								},
+								{
+									"key": "started_streaming_at",
+									"value": "2021-05-01T12:39:54+0000",
+									"type": "text"
+								},
+								{
+									"key": "stream_url",
+									"value": "https://example.com/9e858dd5-d49b-4a83-8401-1eb4d48c4f02.m3u8",
+									"type": "text"
+								},
+								{
+									"key": "thumbnail_url",
+									"value": "https://example.com/c4e794f4-8edb-431a-aa28-a211fdb5ec50.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/assets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"assets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "Post User",
@@ -98,7 +275,7 @@
 					"urlencoded": [
 						{
 							"key": "email",
-							"value": "umair@gmail.com",
+							"value": "test@gmail.com",
 							"type": "text"
 						},
 						{
@@ -109,14 +286,16 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/users",
+					"raw": "http://localhost:3000/api/v1/clients",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"users"
+						"api",
+						"v1",
+						"clients"
 					]
 				}
 			},
@@ -143,14 +322,16 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/users",
+					"raw": "http://localhost:3000/api/v1/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"users"
+						"api",
+						"v1",
+						"login"
 					]
 				}
 			},
