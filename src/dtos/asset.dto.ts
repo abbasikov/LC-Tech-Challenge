@@ -1,16 +1,15 @@
-import { IsString, IsNumber, IsDate } from 'class-validator';
+import { IsString, IsNumber, IsDate } from "class-validator";
 
 export class CreateAssetDto {
   @IsNumber()
-  public LiveStreamID: string;
+  public live_stream_id: string;
 
   @IsString()
-  public StreamURL: string;
+  public stream_url: string;
 
   @IsString()
-  public ThumbnailURL: string;
+  public thumbnail_url: string;
 
   @IsDate()
-  public StartedStreamingAt: Date;
-
+  public started_streaming_at: Date;
 }

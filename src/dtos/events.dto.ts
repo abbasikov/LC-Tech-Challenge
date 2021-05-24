@@ -1,19 +1,18 @@
-import { IsString, IsNumber, IsDate } from 'class-validator';
+import { IsString, IsNumber, IsDate } from "class-validator";
 
 export class CreateEventDto {
   @IsString()
-  public Title: string;
+  public title: string;
 
   @IsString()
-  public Description: string;
+  public description: string;
 
   @IsNumber()
-  public LocationID: number;
+  public location_id: number;
 
   @IsDate()
-  public StartTime: Date;
+  public start_time: string;
 
   @IsDate()
-  public EndTime: Date;
-
+  public end_time: string;
 }

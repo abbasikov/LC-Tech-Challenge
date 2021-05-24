@@ -1,7 +1,7 @@
 export class Asset {
-   id: number
-   LiveStreamID: number;
-   StreamURL: string;
-   ThumbnailURL: string;
-   StartedStreamingAt: Date;
+  id: number;
+  live_stream_id: string;
+  stream_url: string;
+  thumbnail_url: string;
+  started_streaming_at: Date;
 }

@@ -1,0 +1,573 @@
+2021-05-23 12:24:57 info: =================================
+2021-05-23 12:24:57 info: ======= ENV: development =======
+2021-05-23 12:24:57 info: 🚀 App listening on the port 3000
+2021-05-23 12:24:57 info: =================================
+2021-05-23 12:24:57 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:24:57 info: 26ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:24:57 info: 19ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:24:57 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:24:57 info: 3ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:24:57 info: 42ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:24:57 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:24:57 info: 3ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:24:57 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:24:57 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:24:57 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:25:01 info: =================================
+2021-05-23 12:25:01 info: ======= ENV: development =======
+2021-05-23 12:25:01 info: 🚀 App listening on the port 3000
+2021-05-23 12:25:01 info: =================================
+2021-05-23 12:25:01 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:25:01 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:25:01 info: 5ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:25:01 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:01 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:25:01 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:01 info: 3ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:25:01 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:01 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:25:01 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:01 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:25:25 info: =================================
+2021-05-23 12:25:25 info: ======= ENV: development =======
+2021-05-23 12:25:25 info: 🚀 App listening on the port 3000
+2021-05-23 12:25:25 info: =================================
+2021-05-23 12:25:25 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:25:25 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:25:25 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:25:25 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:25 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:25:25 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:25 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:25:25 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:25 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:25:25 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:25 info: 3ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:25:34 info: =================================
+2021-05-23 12:25:34 info: ======= ENV: development =======
+2021-05-23 12:25:34 info: 🚀 App listening on the port 3000
+2021-05-23 12:25:34 info: =================================
+2021-05-23 12:25:34 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:25:34 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:25:34 info: 5ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:25:34 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:34 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:25:34 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:34 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:25:34 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:34 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:25:34 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:34 info: 3ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:25:41 info: =================================
+2021-05-23 12:25:41 info: ======= ENV: development =======
+2021-05-23 12:25:41 info: 🚀 App listening on the port 3000
+2021-05-23 12:25:41 info: =================================
+2021-05-23 12:25:41 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:25:41 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:25:41 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:25:41 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:42 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:25:42 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:42 info: 3ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:25:42 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:42 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:25:42 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:25:42 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:27:46 info: =================================
+2021-05-23 12:27:46 info: ======= ENV: development =======
+2021-05-23 12:27:46 info: 🚀 App listening on the port 3000
+2021-05-23 12:27:46 info: =================================
+2021-05-23 12:27:46 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:27:46 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:27:46 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:27:46 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:27:46 info: 3ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:27:46 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:27:46 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:27:46 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:27:46 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:27:46 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:27:46 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:31:43 info: =================================
+2021-05-23 12:31:43 info: ======= ENV: development =======
+2021-05-23 12:31:43 info: 🚀 App listening on the port 3000
+2021-05-23 12:31:43 info: =================================
+2021-05-23 12:31:43 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:31:43 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:31:43 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:31:43 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:31:43 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:31:43 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:31:43 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:31:43 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:31:43 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:31:43 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:31:43 info: 3ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:32:41 info: =================================
+2021-05-23 12:32:41 info: ======= ENV: development =======
+2021-05-23 12:32:41 info: 🚀 App listening on the port 3000
+2021-05-23 12:32:41 info: =================================
+2021-05-23 12:32:41 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:32:41 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:32:41 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:32:41 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:32:41 info: 3ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:32:41 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:32:41 info: 3ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:32:41 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:32:41 info: 3ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:32:41 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:32:41 info: 3ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:33:52 info: =================================
+2021-05-23 12:33:52 info: ======= ENV: development =======
+2021-05-23 12:33:52 info: 🚀 App listening on the port 3000
+2021-05-23 12:33:52 info: =================================
+2021-05-23 12:33:52 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:33:52 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:33:52 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:33:52 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:33:52 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:33:52 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:33:52 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:33:52 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:33:52 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:33:52 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:33:52 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:34:02 info: =================================
+2021-05-23 12:34:02 info: ======= ENV: development =======
+2021-05-23 12:34:02 info: 🚀 App listening on the port 3000
+2021-05-23 12:34:02 info: =================================
+2021-05-23 12:34:02 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:34:02 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:34:02 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:34:02 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:34:02 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:34:02 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:34:02 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:34:02 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:34:02 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:34:02 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:34:02 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:35:42 info: =================================
+2021-05-23 12:35:42 info: ======= ENV: development =======
+2021-05-23 12:35:42 info: 🚀 App listening on the port 3000
+2021-05-23 12:35:42 info: =================================
+2021-05-23 12:35:42 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:35:42 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:35:42 info: 5ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:35:42 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:35:42 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:35:42 info: 41ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:35:42 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:35:42 info: 3ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:35:42 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:35:42 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:35:42 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:35:55 info: =================================
+2021-05-23 12:35:55 info: ======= ENV: development =======
+2021-05-23 12:35:55 info: 🚀 App listening on the port 3000
+2021-05-23 12:35:55 info: =================================
+2021-05-23 12:35:55 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:35:55 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:35:55 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:35:55 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:35:55 info: 4ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:35:55 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:35:55 info: 1ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:35:55 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:35:55 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:35:55 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:35:55 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:36:06 info: =================================
+2021-05-23 12:36:06 info: ======= ENV: development =======
+2021-05-23 12:36:06 info: 🚀 App listening on the port 3000
+2021-05-23 12:36:06 info: =================================
+2021-05-23 12:36:06 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:36:06 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:36:06 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:36:06 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:36:06 info: 3ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:36:06 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:36:06 info: 3ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:36:06 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:36:06 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:36:06 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:36:06 info: 3ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:36:52 info: =================================
+2021-05-23 12:36:52 info: ======= ENV: development =======
+2021-05-23 12:36:52 info: 🚀 App listening on the port 3000
+2021-05-23 12:36:52 info: =================================
+2021-05-23 12:36:52 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:36:52 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:36:52 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:36:52 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:36:52 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:36:52 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:36:52 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:36:52 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:36:52 info: 1ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:36:52 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:36:52 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:36:56 info: =================================
+2021-05-23 12:36:56 info: ======= ENV: development =======
+2021-05-23 12:36:56 info: 🚀 App listening on the port 3000
+2021-05-23 12:36:56 info: =================================
+2021-05-23 12:36:56 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:36:56 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:36:56 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:36:56 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:36:56 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:36:56 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:36:56 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:36:56 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:36:56 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:36:56 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:36:56 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:37:01 info: 1ms Executed (default): SELECT `AnswerKeyModel`.`id`, `AnswerKeyModel`.`asset_id`, `AnswerKeyModel`.`client_id`, `AnswerKeyModel`.`location_id`, `AnswerKeyModel`.`event_id`, `EventModel`.`id` AS `EventModel.id`, `EventModel`.`start_time` AS `EventModel.start_time`, `EventModel`.`end_time` AS `EventModel.end_time`, `EventModel`.`description` AS `EventModel.description`, `EventModel`.`title` AS `EventModel.title`, `EventModel`.`location_id` AS `EventModel.location_id`, `AssetModel`.`id` AS `AssetModel.id`, `AssetModel`.`started_streaming_at` AS `AssetModel.started_streaming_at`, `AssetModel`.`live_stream_id` AS `AssetModel.live_stream_id`, `AssetModel`.`stream_url` AS `AssetModel.stream_url`, `AssetModel`.`thumbnail_url` AS `AssetModel.thumbnail_url` FROM `answer_key` AS `AnswerKeyModel` LEFT OUTER JOIN `events` AS `EventModel` ON `AnswerKeyModel`.`event_id` = `EventModel`.`id` LEFT OUTER JOIN `assets` AS `AssetModel` ON `AnswerKeyModel`.`asset_id` = `AssetModel`.`id` WHERE `AnswerKeyModel`.`client_id` = 2000 AND `AnswerKeyModel`.`asset_id` = 2000 LIMIT 1;
+2021-05-23 12:37:01 error: [GET] /api/v1/clients/2000/asset/4000 >> StatusCode:: 500, Message:: Unknown column 'AnswerKeyModel.id' in 'field list'
+2021-05-23 12:37:01 info: [0mGET /api/v1/clients/2000/asset/4000 [31m500[0m 15.690 ms - 64[0m
+2021-05-23 12:37:24 info: =================================
+2021-05-23 12:37:24 info: ======= ENV: development =======
+2021-05-23 12:37:24 info: 🚀 App listening on the port 3000
+2021-05-23 12:37:24 info: =================================
+2021-05-23 12:37:24 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:37:24 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:37:24 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:37:24 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:37:24 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:37:24 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:37:24 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:37:24 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:37:24 info: 3ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:37:24 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:37:24 info: 3ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:38:09 info: =================================
+2021-05-23 12:38:09 info: ======= ENV: development =======
+2021-05-23 12:38:09 info: 🚀 App listening on the port 3000
+2021-05-23 12:38:09 info: =================================
+2021-05-23 12:38:09 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:38:09 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:38:09 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:38:09 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:38:09 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:38:09 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:38:09 info: 3ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:38:09 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:38:09 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:38:09 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:38:09 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:39:32 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:39:37 info: =================================
+2021-05-23 12:39:37 info: ======= ENV: development =======
+2021-05-23 12:39:37 info: 🚀 App listening on the port 3000
+2021-05-23 12:39:37 info: =================================
+2021-05-23 12:39:37 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:39:37 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:39:37 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:39:37 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:39:37 info: 3ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:39:37 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:39:37 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:39:37 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:39:37 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:39:37 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`id` INTEGER NOT NULL auto_increment , `asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:39:37 info: 3ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:41:23 info: =================================
+2021-05-23 12:41:23 info: ======= ENV: development =======
+2021-05-23 12:41:23 info: 🚀 App listening on the port 3000
+2021-05-23 12:41:23 info: =================================
+2021-05-23 12:41:23 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:41:23 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:41:23 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:41:23 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:41:23 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:41:23 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:41:23 info: 3ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:41:23 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:41:23 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:41:23 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:41:23 info: 3ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:41:31 info: 9ms Executed (default): SELECT `AnswerKeyModel`.`asset_id`, `AnswerKeyModel`.`client_id`, `AnswerKeyModel`.`location_id`, `AnswerKeyModel`.`event_id`, `EventModel`.`id` AS `EventModel.id`, `EventModel`.`start_time` AS `EventModel.start_time`, `EventModel`.`end_time` AS `EventModel.end_time`, `EventModel`.`description` AS `EventModel.description`, `EventModel`.`title` AS `EventModel.title`, `EventModel`.`location_id` AS `EventModel.location_id`, `AssetModel`.`id` AS `AssetModel.id`, `AssetModel`.`started_streaming_at` AS `AssetModel.started_streaming_at`, `AssetModel`.`live_stream_id` AS `AssetModel.live_stream_id`, `AssetModel`.`stream_url` AS `AssetModel.stream_url`, `AssetModel`.`thumbnail_url` AS `AssetModel.thumbnail_url` FROM `answer_key` AS `AnswerKeyModel` LEFT OUTER JOIN `events` AS `EventModel` ON `AnswerKeyModel`.`event_id` = `EventModel`.`id` LEFT OUTER JOIN `assets` AS `AssetModel` ON `AnswerKeyModel`.`asset_id` = `AssetModel`.`id` WHERE `AnswerKeyModel`.`client_id` = 2000 AND `AnswerKeyModel`.`asset_id` = 4000 LIMIT 1;
+2021-05-23 12:41:31 info: [0mGET /api/v1/clients/2000/asset/4000 [32m200[0m 24.910 ms - 562[0m
+2021-05-23 12:47:26 info: =================================
+2021-05-23 12:47:26 info: ======= ENV: development =======
+2021-05-23 12:47:26 info: 🚀 App listening on the port 3000
+2021-05-23 12:47:26 info: =================================
+2021-05-23 12:47:26 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:47:26 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:47:26 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:47:26 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:47:26 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:47:26 info: 5ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:47:26 info: 3ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:47:26 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:47:26 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:47:26 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:47:26 info: 3ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:47:33 info: 1ms Executed (default): SELECT `AnswerKeyModel`.`asset_id`, `AnswerKeyModel`.`client_id`, `AnswerKeyModel`.`location_id`, `AnswerKeyModel`.`event_id`, `EventModel`.`id` AS `EventModel.id`, `EventModel`.`title` AS `EventModel.title`, `EventModel`.`description` AS `EventModel.description`, `EventModel`.`start_time` AS `EventModel.start_time`, `EventModel`.`end_time` AS `EventModel.end_time`, `AssetModel`.`id` AS `AssetModel.id`, `AssetModel`.`live_stream_url` AS `AssetModel.live_stream_url`, `AssetModel`.`thumbnail_url` AS `AssetModel.thumbnail_url`, `AssetModel`.`started_streaming_at` AS `AssetModel.started_streaming_at` FROM `answer_key` AS `AnswerKeyModel` LEFT OUTER JOIN `events` AS `EventModel` ON `AnswerKeyModel`.`event_id` = `EventModel`.`id` LEFT OUTER JOIN `assets` AS `AssetModel` ON `AnswerKeyModel`.`asset_id` = `AssetModel`.`id` WHERE `AnswerKeyModel`.`client_id` = 2000 AND `AnswerKeyModel`.`asset_id` = 4000 LIMIT 1;
+2021-05-23 12:47:33 error: [GET] /api/v1/clients/2000/asset/4000 >> StatusCode:: 500, Message:: Unknown column 'AssetModel.live_stream_url' in 'field list'
+2021-05-23 12:47:33 info: [0mGET /api/v1/clients/2000/asset/4000 [31m500[0m 16.383 ms - 73[0m
+2021-05-23 12:47:44 info: =================================
+2021-05-23 12:47:44 info: ======= ENV: development =======
+2021-05-23 12:47:44 info: 🚀 App listening on the port 3000
+2021-05-23 12:47:44 info: =================================
+2021-05-23 12:47:44 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:47:44 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:47:44 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:47:44 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:47:44 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:47:44 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:47:44 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:47:44 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:47:44 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:47:44 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:47:44 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:47:47 info: 1ms Executed (default): SELECT `AnswerKeyModel`.`asset_id`, `AnswerKeyModel`.`client_id`, `AnswerKeyModel`.`location_id`, `AnswerKeyModel`.`event_id`, `EventModel`.`id` AS `EventModel.id`, `EventModel`.`title` AS `EventModel.title`, `EventModel`.`description` AS `EventModel.description`, `EventModel`.`start_time` AS `EventModel.start_time`, `EventModel`.`end_time` AS `EventModel.end_time`, `AssetModel`.`id` AS `AssetModel.id`, `AssetModel`.`livestream_url` AS `AssetModel.livestream_url`, `AssetModel`.`thumbnail_url` AS `AssetModel.thumbnail_url`, `AssetModel`.`started_streaming_at` AS `AssetModel.started_streaming_at` FROM `answer_key` AS `AnswerKeyModel` LEFT OUTER JOIN `events` AS `EventModel` ON `AnswerKeyModel`.`event_id` = `EventModel`.`id` LEFT OUTER JOIN `assets` AS `AssetModel` ON `AnswerKeyModel`.`asset_id` = `AssetModel`.`id` WHERE `AnswerKeyModel`.`client_id` = 2000 AND `AnswerKeyModel`.`asset_id` = 4000 LIMIT 1;
+2021-05-23 12:47:47 error: [GET] /api/v1/clients/2000/asset/4000 >> StatusCode:: 500, Message:: Unknown column 'AssetModel.livestream_url' in 'field list'
+2021-05-23 12:47:47 info: [0mGET /api/v1/clients/2000/asset/4000 [31m500[0m 16.166 ms - 72[0m
+2021-05-23 12:48:17 info: =================================
+2021-05-23 12:48:17 info: ======= ENV: development =======
+2021-05-23 12:48:17 info: 🚀 App listening on the port 3000
+2021-05-23 12:48:17 info: =================================
+2021-05-23 12:48:17 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:48:17 info: 3ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:48:17 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:48:17 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:48:17 info: 3ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:48:17 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:48:17 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:48:17 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:48:17 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:48:17 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:48:17 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:48:18 info: 2ms Executed (default): SELECT `AnswerKeyModel`.`asset_id`, `AnswerKeyModel`.`client_id`, `AnswerKeyModel`.`location_id`, `AnswerKeyModel`.`event_id`, `EventModel`.`id` AS `EventModel.id`, `EventModel`.`title` AS `EventModel.title`, `EventModel`.`description` AS `EventModel.description`, `EventModel`.`start_time` AS `EventModel.start_time`, `EventModel`.`end_time` AS `EventModel.end_time`, `AssetModel`.`id` AS `AssetModel.id`, `AssetModel`.`stream_url` AS `AssetModel.stream_url`, `AssetModel`.`thumbnail_url` AS `AssetModel.thumbnail_url`, `AssetModel`.`started_streaming_at` AS `AssetModel.started_streaming_at` FROM `answer_key` AS `AnswerKeyModel` LEFT OUTER JOIN `events` AS `EventModel` ON `AnswerKeyModel`.`event_id` = `EventModel`.`id` LEFT OUTER JOIN `assets` AS `AssetModel` ON `AnswerKeyModel`.`asset_id` = `AssetModel`.`id` WHERE `AnswerKeyModel`.`client_id` = 2000 AND `AnswerKeyModel`.`asset_id` = 4000 LIMIT 1;
+2021-05-23 12:48:18 info: [0mGET /api/v1/clients/2000/asset/4000 [32m200[0m 19.058 ms - 467[0m
+2021-05-23 12:50:07 info: =================================
+2021-05-23 12:50:07 info: ======= ENV: development =======
+2021-05-23 12:50:07 info: 🚀 App listening on the port 3000
+2021-05-23 12:50:07 info: =================================
+2021-05-23 12:50:07 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:50:07 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:50:07 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:50:07 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:07 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:50:07 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:07 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:50:07 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:07 info: 3ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:50:07 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:07 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:50:11 info: =================================
+2021-05-23 12:50:11 info: ======= ENV: development =======
+2021-05-23 12:50:11 info: 🚀 App listening on the port 3000
+2021-05-23 12:50:11 info: =================================
+2021-05-23 12:50:11 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:50:11 info: 3ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:50:11 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:50:11 info: 0ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:11 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:50:11 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:11 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:50:11 info: 0ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:11 info: 1ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:50:11 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:11 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:50:28 info: =================================
+2021-05-23 12:50:28 info: ======= ENV: development =======
+2021-05-23 12:50:28 info: 🚀 App listening on the port 3000
+2021-05-23 12:50:28 info: =================================
+2021-05-23 12:50:28 info: 2ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:50:28 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:50:28 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:50:28 info: 3ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:28 info: 5ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:50:28 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:28 info: 8ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:50:28 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:28 info: 7ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:50:28 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:28 info: 3ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:50:33 info: =================================
+2021-05-23 12:50:33 info: ======= ENV: development =======
+2021-05-23 12:50:33 info: 🚀 App listening on the port 3000
+2021-05-23 12:50:33 info: =================================
+2021-05-23 12:50:33 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:50:33 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:50:33 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:50:33 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:33 info: 3ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:50:33 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:33 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:50:33 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:33 info: 1ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:50:33 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:33 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:50:59 info: =================================
+2021-05-23 12:50:59 info: ======= ENV: development =======
+2021-05-23 12:50:59 info: 🚀 App listening on the port 3000
+2021-05-23 12:50:59 info: =================================
+2021-05-23 12:50:59 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:50:59 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:50:59 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:50:59 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:59 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:50:59 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:59 info: 3ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:50:59 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:59 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:50:59 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:50:59 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:51:42 info: =================================
+2021-05-23 12:51:42 info: ======= ENV: development =======
+2021-05-23 12:51:42 info: 🚀 App listening on the port 3000
+2021-05-23 12:51:42 info: =================================
+2021-05-23 12:51:43 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:51:43 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:51:43 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:51:43 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:51:43 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:51:43 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:51:43 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:51:43 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:51:43 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:51:43 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:51:43 info: 1ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:52:33 info: =================================
+2021-05-23 12:52:34 info: ======= ENV: development =======
+2021-05-23 12:52:34 info: 🚀 App listening on the port 3000
+2021-05-23 12:52:34 info: =================================
+2021-05-23 12:52:34 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:52:34 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:52:34 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:52:34 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:52:34 info: 3ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:52:34 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:52:34 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:52:34 info: 0ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:52:34 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:52:34 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:52:34 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:52:53 info: =================================
+2021-05-23 12:52:53 info: ======= ENV: development =======
+2021-05-23 12:52:53 info: 🚀 App listening on the port 3000
+2021-05-23 12:52:53 info: =================================
+2021-05-23 12:52:53 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:52:53 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:52:53 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:52:53 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:52:53 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:52:53 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:52:53 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:52:53 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:52:53 info: 1ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:52:53 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:52:53 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:53:20 info: 2ms Executed (default): SELECT `AnswerKeyModel`.`asset_id`, `AnswerKeyModel`.`client_id`, `AnswerKeyModel`.`location_id`, `AnswerKeyModel`.`event_id`, `EventModel`.`id` AS `EventModel.id`, `EventModel`.`title` AS `EventModel.title`, `EventModel`.`description` AS `EventModel.description`, `EventModel`.`start_time` AS `EventModel.start_time`, `EventModel`.`end_time` AS `EventModel.end_time`, `AssetModel`.`id` AS `AssetModel.id`, `AssetModel`.`stream_url` AS `AssetModel.stream_url`, `AssetModel`.`thumbnail_url` AS `AssetModel.thumbnail_url`, `AssetModel`.`started_streaming_at` AS `AssetModel.started_streaming_at` FROM `answer_key` AS `AnswerKeyModel` LEFT OUTER JOIN `events` AS `EventModel` ON `AnswerKeyModel`.`event_id` = `EventModel`.`id` LEFT OUTER JOIN `assets` AS `AssetModel` ON `AnswerKeyModel`.`asset_id` = `AssetModel`.`id` WHERE `AnswerKeyModel`.`client_id` = 2000 LIMIT 1;
+2021-05-23 12:53:20 info: [0mGET /api/v1/clients/2000/assets [32m200[0m 22.145 ms - 477[0m
+2021-05-23 12:53:44 info: =================================
+2021-05-23 12:53:44 info: ======= ENV: development =======
+2021-05-23 12:53:44 info: 🚀 App listening on the port 3000
+2021-05-23 12:53:44 info: =================================
+2021-05-23 12:53:44 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:53:44 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:53:44 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:53:44 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:53:44 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:53:44 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:53:44 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:53:44 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:53:44 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:53:44 info: 0ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:53:44 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:53:58 info: =================================
+2021-05-23 12:53:58 info: ======= ENV: development =======
+2021-05-23 12:53:58 info: 🚀 App listening on the port 3000
+2021-05-23 12:53:58 info: =================================
+2021-05-23 12:53:58 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:53:58 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:53:58 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:53:58 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:53:58 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:53:58 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:53:58 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:53:58 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:53:58 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:53:58 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:53:58 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:54:03 info: =================================
+2021-05-23 12:54:03 info: ======= ENV: development =======
+2021-05-23 12:54:03 info: 🚀 App listening on the port 3000
+2021-05-23 12:54:03 info: =================================
+2021-05-23 12:54:03 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 12:54:03 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 12:54:03 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 12:54:03 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:54:03 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 12:54:03 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:54:03 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 12:54:03 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:54:03 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 12:54:03 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 12:54:03 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 12:54:07 info: 2ms Executed (default): SELECT `AnswerKeyModel`.`asset_id`, `AnswerKeyModel`.`client_id`, `AnswerKeyModel`.`location_id`, `AnswerKeyModel`.`event_id`, `EventModel`.`id` AS `EventModel.id`, `EventModel`.`title` AS `EventModel.title`, `EventModel`.`description` AS `EventModel.description`, `EventModel`.`start_time` AS `EventModel.start_time`, `EventModel`.`end_time` AS `EventModel.end_time`, `AssetModel`.`id` AS `AssetModel.id`, `AssetModel`.`stream_url` AS `AssetModel.stream_url`, `AssetModel`.`thumbnail_url` AS `AssetModel.thumbnail_url`, `AssetModel`.`started_streaming_at` AS `AssetModel.started_streaming_at` FROM `answer_key` AS `AnswerKeyModel` LEFT OUTER JOIN `events` AS `EventModel` ON `AnswerKeyModel`.`event_id` = `EventModel`.`id` LEFT OUTER JOIN `assets` AS `AssetModel` ON `AnswerKeyModel`.`asset_id` = `AssetModel`.`id` WHERE `AnswerKeyModel`.`client_id` = 2000;
+2021-05-23 12:54:07 info: [0mGET /api/v1/clients/2000/assets [32m200[0m 23.235 ms - -[0m
+2021-05-23 13:01:13 info: =================================
+2021-05-23 13:01:13 info: ======= ENV: development =======
+2021-05-23 13:01:13 info: 🚀 App listening on the port 3000
+2021-05-23 13:01:13 info: =================================
+2021-05-23 13:01:13 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 13:01:13 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 13:01:13 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 13:01:13 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:13 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 13:01:13 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:13 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 13:01:13 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:13 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 13:01:13 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:13 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 13:01:28 info: =================================
+2021-05-23 13:01:28 info: ======= ENV: development =======
+2021-05-23 13:01:28 info: 🚀 App listening on the port 3000
+2021-05-23 13:01:28 info: =================================
+2021-05-23 13:01:28 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 13:01:28 info: 6ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 13:01:28 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 13:01:28 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:28 info: 3ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 13:01:28 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:28 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 13:01:28 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:28 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 13:01:28 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:28 info: 3ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 13:01:33 info: =================================
+2021-05-23 13:01:33 info: ======= ENV: development =======
+2021-05-23 13:01:33 info: 🚀 App listening on the port 3000
+2021-05-23 13:01:33 info: =================================
+2021-05-23 13:01:34 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 13:01:34 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 13:01:34 info: 4ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 13:01:34 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:34 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 13:01:34 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:34 info: 2ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 13:01:34 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:34 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 13:01:34 info: 2ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:34 info: 3ms Executed (default): SHOW INDEX FROM `answer_key`
+2021-05-23 13:01:43 info: =================================
+2021-05-23 13:01:43 info: ======= ENV: development =======
+2021-05-23 13:01:43 info: 🚀 App listening on the port 3000
+2021-05-23 13:01:43 info: =================================
+2021-05-23 13:01:43 info: 1ms Executed (default): SELECT 1+1 AS result
+2021-05-23 13:01:43 info: 7ms Executed (default): CREATE TABLE IF NOT EXISTS `clients` (`id` INTEGER auto_increment , `email` VARCHAR(45) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2021-05-23 13:01:43 info: 3ms Executed (default): SHOW INDEX FROM `clients`
+2021-05-23 13:01:43 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `locations` (`id` INTEGER auto_increment , `client_id` INTEGER NOT NULL, `live_stream_id` TEXT UNIQUE, `live_stream_key` TEXT, PRIMARY KEY (`id`), FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:43 info: 2ms Executed (default): SHOW INDEX FROM `locations`
+2021-05-23 13:01:43 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER auto_increment , `start_time` TEXT, `end_time` TEXT, `description` TEXT, `title` TEXT, `location_id` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:43 info: 1ms Executed (default): SHOW INDEX FROM `events`
+2021-05-23 13:01:43 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `assets` (`id` INTEGER auto_increment , `started_streaming_at` DATETIME NOT NULL, `live_stream_id` INTEGER NOT NULL, `stream_url` TEXT NOT NULL, `thumbnail_url` TEXT NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`live_stream_id`) REFERENCES `locations` (`live_stream_id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:43 info: 2ms Executed (default): SHOW INDEX FROM `assets`
+2021-05-23 13:01:43 info: 1ms Executed (default): CREATE TABLE IF NOT EXISTS `answer_key` (`asset_id` INTEGER, `client_id` INTEGER NOT NULL, `location_id` INTEGER UNIQUE, `event_id` INTEGER, FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE, FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`event_id`) REFERENCES `events` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2021-05-23 13:01:43 info: 2ms Executed (default): SHOW INDEX FROM `answer_key`

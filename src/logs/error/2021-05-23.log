@@ -1,0 +1,15 @@
+2021-05-23 12:37:01 error: [GET] /api/v1/clients/2000/asset/4000 >> StatusCode:: 500, Message:: Unknown column 'AnswerKeyModel.id' in 'field list'
+2021-05-23 12:39:32 error: uncaughtException: this.options.indexes.map is not a function
+TypeError: this.options.indexes.map is not a function
+    at Function.init (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/model.js:1017:8)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/answer_key.model.ts:24:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:34:29)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-05-23 12:47:33 error: [GET] /api/v1/clients/2000/asset/4000 >> StatusCode:: 500, Message:: Unknown column 'AssetModel.live_stream_url' in 'field list'
+2021-05-23 12:47:47 error: [GET] /api/v1/clients/2000/asset/4000 >> StatusCode:: 500, Message:: Unknown column 'AssetModel.livestream_url' in 'field list'

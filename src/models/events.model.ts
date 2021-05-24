@@ -1,55 +1,65 @@
-import { Sequelize, DataTypes, Model, Optional } from 'sequelize';
-import { Event } from '@/interfaces/event.interface';
-import { LocationModel } from './location.model';
+import { Sequelize, DataTypes, Model, Optional } from "sequelize";
+import { Event } from "@/interfaces/event.interface";
+import { LocationModel } from "./location.model";
+import { ClientModel } from "./clients.model";
 
-export type EventCreationAttributes = Optional<Event, 'StartTime' | 'EndTime' | 'LocationID' | 'Description' | 'Title'>;
+export type EventCreationAttributes = Optional<
+  Event,
+  "start_time" | "end_time" | "location_id" | "description" | "title" | "id"
+>;
 
-export class EventModel extends Model<Event, EventCreationAttributes> implements Event {
-  public ID: number;
-  public Description: string;
-  public StartTime: Date;
-  public EndTime: Date;
-  public LocationID: number;
-  public Title: string;
-
-  public readonly createdAt!: Date;
-  public readonly updatedAt!: Date;
+export class EventModel
+  extends Model<Event, EventCreationAttributes>
+  implements Event
+{
+  public id: number;
+  public description: string;
+  public start_time: string;
+  public end_time: string;
+  public location_id: number;
+  public title: string;
 }
 
 export default function (sequelize: Sequelize): typeof EventModel {
   EventModel.init(
     {
-      ID: {
+      id: {
         autoIncrement: true,
         primaryKey: true,
         type: DataTypes.INTEGER,
       },
-      StartTime: {
-        allowNull: false,
+      start_time: {
+        allowNull: true,
         type: DataTypes.TEXT,
       },
-      EndTime: {
-        allowNull: false,
+      end_time: {
+        allowNull: true,
         type: DataTypes.TEXT,
       },
-      Description:{
-        allowNull:false,
-        type:DataTypes.TEXT,
+      description: {
+        allowNull: true,
+        type: DataTypes.TEXT,
       },
-      Title:{
-        allowNull:false,
-        type:DataTypes.TEXT,
+      title: {
+        allowNull: true,
+        type: DataTypes.TEXT,
       },
-      LocationID:{
-        allowNull:false,
-        type:DataTypes.INTEGER
-      }
+      location_id: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+      },
     },
     {
-      tableName: 'events',
+      tableName: "events",
       sequelize,
-    },
+      createdAt: false,
+      updatedAt: false,
+    }
   );
+
+  EventModel.belongsTo(LocationModel, {
+    foreignKey: "location_id",
+  });
 
   return EventModel;
 }

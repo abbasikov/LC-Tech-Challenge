@@ -1,17 +1,26 @@
-import { Sequelize, DataTypes, Model, Optional } from 'sequelize';
-import { Asset } from '@/interfaces/asset.interface';
+import { Sequelize, DataTypes, Model, Optional } from "sequelize";
+import { Asset } from "@/interfaces/asset.interface";
+import { EventModel } from "./events.model";
+import { LocationModel } from "./location.model";
 
-export type AssetCreationAttributes = Optional<Asset, 'StartedStreamingAt' | 'StreamURL' | 'ThumbnailURL'>;
+export type AssetCreationAttributes = Optional<
+  Asset,
+  | "started_streaming_at"
+  | "stream_url"
+  | "thumbnail_url"
+  | "live_stream_id"
+  | "id"
+>;
 
-export class AssetModel extends Model<Asset, AssetCreationAttributes> implements Asset {
+export class AssetModel
+  extends Model<Asset, AssetCreationAttributes>
+  implements Asset
+{
   public id: number;
-  public LiveStreamID: number;
-  public StartedStreamingAt: Date;
-  public StreamURL: string;
-  public ThumbnailURL: string;
-
-  public readonly createdAt!: Date;
-  public readonly updatedAt!: Date;
+  public live_stream_id: string;
+  public started_streaming_at: Date;
+  public stream_url: string;
+  public thumbnail_url: string;
 }
 
 export default function (sequelize: Sequelize): typeof AssetModel {
@@ -22,28 +31,34 @@ export default function (sequelize: Sequelize): typeof AssetModel {
         primaryKey: true,
         type: DataTypes.INTEGER,
       },
-      StartedStreamingAt: {
+      started_streaming_at: {
         allowNull: false,
-        type: DataTypes.DATE,
+        type: DataTypes.TEXT,
       },
-      LiveStreamID: {
+      live_stream_id: {
         allowNull: false,
-        type: DataTypes.NUMBER,
+        type: DataTypes.TEXT,
       },
-      StreamURL:{
-        allowNull:false,
-        type:DataTypes.STRING(256),
+      stream_url: {
+        allowNull: false,
+        type: DataTypes.TEXT,
       },
-      ThumbnailURL:{
-        allowNull:false,
-        type:DataTypes.STRING(256),
-      }
+      thumbnail_url: {
+        allowNull: false,
+        type: DataTypes.TEXT,
+      },
     },
     {
-      tableName: 'assets',
+      tableName: "assets",
       sequelize,
-    },
+      createdAt: false,
+      updatedAt: false,
+    }
   );
+  AssetModel.belongsTo(LocationModel, {
+    foreignKey: "live_stream_id",
+    targetKey: "live_stream_id",
+  });
 
   return AssetModel;
 }

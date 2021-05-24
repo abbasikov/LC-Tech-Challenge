@@ -1,12 +1,12 @@
-import { IsString, IsNumber } from 'class-validator';
+import { IsString, IsNumber } from "class-validator";
 
-export class CreateEventDto {
+export class CreateLocationDto {
   @IsString()
-  public LiveStreamKey: string;
+  public live_stream_key: string;
 
   @IsNumber()
-  public LiveStreamID: number;
+  public live_stream_id: number;
 
   @IsNumber()
-  public ClientID: number;
+  public client_id: number;
 }

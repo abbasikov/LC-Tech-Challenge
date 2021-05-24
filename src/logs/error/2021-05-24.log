@@ -1,0 +1,200 @@
+2021-05-24 07:05:07 error: [GET] /api/v1/clients/2000/assets/2021-05-01T12:29:54+0000/2021-05-01T1:29:54+0000 >> StatusCode:: 401, Message:: Wrong authentication token
+2021-05-24 07:52:02 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/clients.service.ts[0m:[93m163[0m:[93m33[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m163[0m console.log(findClientAsset)    if (!findClientAsset) throw new HttpException(409, "No record found");
+[7m   [0m [91m                                ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/clients.service.ts[0m:[93m163[0m:[93m33[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m163[0m console.log(findClientAsset)    if (!findClientAsset) throw new HttpException(409, "No record found");
+[7m   [0m [91m                                ~~[0m
+
+    at createTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:955:34)
+    at Object.compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-05-24 12:40:44 error: [GET] /api/v1/clients/2000/assets/2021-05-01T12:29:54+0000/2021-05-01T12:40:54+0000 >> StatusCode:: 401, Message:: Wrong authentication token
+2021-05-24 13:35:43 error: [POST] /api/v1/assets >> StatusCode:: 500, Message:: Cannot read property 'dataValues' of undefined
+2021-05-24 14:03:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m34[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m34[0m     const createAnswerKey: AnswerKey = await this.answerKey.create({
+[7m  [0m [91m    ~~~~~[0m
+[96msrc/services/assets.service.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m39[0m     });
+[7m  [0m [91m    ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m34[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m34[0m     const createAnswerKey: AnswerKey = await this.answerKey.create({
+[7m  [0m [91m    ~~~~~[0m
+[96msrc/services/assets.service.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m39[0m     });
+[7m  [0m [91m    ~[0m
+
+    at createTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:955:34)
+    at Object.compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-05-24 14:03:10 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m34[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m34[0m     const createAnswerKey: AnswerKey = await this.answerKey.create({
+[7m  [0m [91m    ~~~~~[0m
+[96msrc/services/assets.service.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m39[0m     });
+[7m  [0m [91m    ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m34[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m34[0m     const createAnswerKey: AnswerKey = await this.answerKey.create({
+[7m  [0m [91m    ~~~~~[0m
+[96msrc/services/assets.service.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m39[0m     });
+[7m  [0m [91m    ~[0m
+
+    at createTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:955:34)
+    at Object.compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-05-24 14:04:10 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m39[0m     });
+[7m  [0m [91m    ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m39[0m     });
+[7m  [0m [91m    ~[0m
+
+    at createTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:955:34)
+    at Object.compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-05-24 14:10:23 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m39[0m     });
+[7m  [0m [91m    ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m39[0m     });
+[7m  [0m [91m    ~[0m
+
+    at createTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:955:34)
+    at Object.compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-05-24 14:11:48 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m41[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m41[0m     });
+[7m  [0m [91m    ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m41[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m41[0m     });
+[7m  [0m [91m    ~[0m
+
+    at createTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:955:34)
+    at Object.compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-05-24 14:11:54 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m41[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m41[0m     });
+[7m  [0m [91m    ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m41[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m41[0m     });
+[7m  [0m [91m    ~[0m
+
+    at createTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:955:34)
+    at Object.compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-05-24 14:16:00 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m50[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m50[0m     });
+[7m  [0m [91m    ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/assets.service.ts[0m:[93m50[0m:[93m5[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m50[0m     });
+[7m  [0m [91m    ~[0m
+
+    at createTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:955:34)
+    at Object.compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-05-24 14:23:22 error: [POST] /api/v1/assets >> StatusCode:: 401, Message:: Wrong authentication token
+2021-05-24 14:24:08 error: [POST] /api/v1/assets >> StatusCode:: 500, Message:: events.filter is not a function
+2021-05-24 14:33:31 error: [POST] /api/v1/assets >> StatusCode:: 500, Message:: Cannot read property 'dataValues' of undefined
+2021-05-24 14:34:00 error: [POST] /api/v1/assets >> StatusCode:: 500, Message:: Cannot read property 'dataValues' of undefined
+2021-05-24 14:34:25 error: [POST] /api/v1/assets >> StatusCode:: 500, Message:: Cannot read property 'dataValues' of undefined

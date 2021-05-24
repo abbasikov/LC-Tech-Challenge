@@ -1,0 +1,820 @@
+2021-05-22 11:16:15 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email
+2021-05-22 11:16:47 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email
+2021-05-22 11:16:58 error: [POST] /users >> StatusCode:: 409, Message:: You're email umair@gmail.com already exists
+2021-05-22 11:17:43 error: [POST] /users >> StatusCode:: 400, Message:: You're not clientData
+2021-05-22 11:17:51 error: [POST] /users >> StatusCode:: 409, Message:: You're email umair@gmail.com already exists
+2021-05-22 11:51:29 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/models/events.model.ts[0m:[93m59[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m59[0m }
+[7m  [0m [91m~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/models/events.model.ts[0m:[93m59[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m59[0m }
+[7m  [0m [91m~[0m
+
+    at createTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:955:34)
+    at Object.compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-05-22 11:51:51 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:55:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:22)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 11:52:27 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:22)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 11:52:32 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:22)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 11:52:48 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:22)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 11:53:59 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:22)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 11:54:12 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:22)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 11:54:20 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:22)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 11:55:00 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:22)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 11:55:06 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:27:22)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 11:55:46 error: uncaughtException: Class constructor LocationModel cannot be invoked without 'new'
+TypeError: Class constructor LocationModel cannot be invoked without 'new'
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:13)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/app.ts:12:1)
+2021-05-22 12:04:58 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:60:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:05:03 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:60:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:05:29 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:60:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:06:34 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:60:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:10:04 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:60:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:10:07 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:60:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:10:35 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:10:53 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:12:38 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:14:39 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:14:41 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:15:21 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:15:26 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:15:55 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:16:03 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:18:39 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:20:17 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:21:29 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:23:22 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:29:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:25:05 error: [GET] /events >> StatusCode:: 500, Message:: Unknown column 'createdAt' in 'field list'
+2021-05-22 12:25:42 error: [GET] /events >> StatusCode:: 500, Message:: Unknown column 'createdAt' in 'field list'
+2021-05-22 12:25:43 error: [GET] /events >> StatusCode:: 500, Message:: Unknown column 'createdAt' in 'field list'
+2021-05-22 12:31:24 error: [GET] /events >> StatusCode:: 500, Message:: Unknown column 'createdAt' in 'field list'
+2021-05-22 12:31:34 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/events.service.ts[0m:[93m11[0m:[93m8[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m11[0m       ();
+[7m  [0m [91m       ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/events.service.ts[0m:[93m11[0m:[93m8[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m11[0m       ();
+[7m  [0m [91m       ~[0m
+
+    at createTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:955:34)
+    at Object.compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-05-22 12:34:00 error: [GET] /events >> StatusCode:: 500, Message:: Association with alias "LocationID" does not exist on EventModel
+2021-05-22 12:34:34 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new HasMany (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/has-many.js:51:37)
+    at Function.hasMany (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:34:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:34:44 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new HasMany (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/has-many.js:51:37)
+    at Function.hasMany (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:34:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:35:04 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:36:23 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:36:44 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:36:59 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:37:56 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:38:01 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:38:42 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:59:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:39:27 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:60:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:39:41 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:60:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:41:46 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:57:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:42:56 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:57:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:44:41 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:57:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:45:30 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:57:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:46:04 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:57:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:47:19 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:58:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:47:27 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:58:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:47:42 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:58:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:47:46 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:58:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:48:02 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:58:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:48:22 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:30:37)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/events.model.ts:58:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:21)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:48:54 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new HasMany (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/has-many.js:51:37)
+    at Function.hasMany (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:34:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/location.model.ts:53:17)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:26)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:48:58 error: uncaughtException: Cannot read property 'name' of undefined
+TypeError: Cannot read property 'name' of undefined
+    at new HasMany (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/has-many.js:51:37)
+    at Function.hasMany (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:34:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/location.model.ts:53:17)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:30:26)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 12:49:25 error: [GET] /events >> StatusCode:: 500, Message:: Association with alias "LocationID" does not exist on EventModel
+2021-05-22 12:54:20 error: [GET] /events >> StatusCode:: 500, Message:: Association with alias "LocationID" does not exist on EventModel
+2021-05-22 12:54:22 error: [GET] /events >> StatusCode:: 500, Message:: Association with alias "LocationID" does not exist on EventModel
+2021-05-22 12:54:38 error: [GET] /events >> StatusCode:: 500, Message:: Association with alias "LocationID" does not exist on EventModel
+2021-05-22 12:56:52 error: [GET] /events >> StatusCode:: 500, Message:: Unknown column 'LocationModel.createdAt' in 'field list'
+2021-05-22 13:12:33 error: [GET] /events >> StatusCode:: 500, Message:: Unknown column 'LocationModel.createdAt' in 'field list'
+2021-05-22 13:17:15 error: [GET] /events >> StatusCode:: 500, Message:: LocationModel is associated to EventModel using an alias. You've included an alias (Location), but it does not match the alias(es) defined in your association (LocationModel).
+2021-05-22 13:28:54 error: uncaughtException: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+Error: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:59:13)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/assets.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:32:20)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 13:28:59 error: uncaughtException: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+Error: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:59:13)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/assets.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:32:20)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 13:29:04 error: uncaughtException: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+Error: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:59:13)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/assets.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:32:20)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 13:29:32 error: uncaughtException: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+Error: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:59:13)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/assets.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:32:20)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 13:30:45 error: uncaughtException: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+Error: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:59:13)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/assets.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:32:20)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 13:30:49 error: uncaughtException: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+Error: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:59:13)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/assets.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:32:20)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 13:31:36 error: uncaughtException: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+Error: Unknown attribute "LiveStreamID" passed as targetKey, define this attribute on model "LocationModel" first
+    at new BelongsTo (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/belongs-to.js:59:13)
+    at Function.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/sequelize/lib/associations/mixin.js:105:25)
+    at Object.default_1 [as default] (/Users/admin/Downloads/LC-Tech-Challenge/src/models/assets.model.ts:54:14)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/databases/index.ts:32:20)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-05-22 13:37:49 error: uncaughtException: Cannot find module '@controllers/users.controller'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/clients.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+Error: Cannot find module '@controllers/users.controller'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/clients.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._resolveFilename (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/tsconfig-paths/lib/register.js:75:40)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/clients.route.ts:2:1)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+2021-05-22 13:37:59 error: uncaughtException: Cannot find module '@controllers/users.controller'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/clients.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+Error: Cannot find module '@controllers/users.controller'
+Require stack:
+- /Users/admin/Downloads/LC-Tech-Challenge/src/routes/clients.route.ts
+- /Users/admin/Downloads/LC-Tech-Challenge/src/server.ts
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._resolveFilename (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/tsconfig-paths/lib/register.js:75:40)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/admin/Downloads/LC-Tech-Challenge/src/routes/clients.route.ts:2:1)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Module.m._compile (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/admin/Downloads/LC-Tech-Challenge/node_modules/ts-node/src/index.ts:1059:12)
+2021-05-22 13:44:11 error: [GET] /locations >> StatusCode:: 500, Message:: LocationModel is not associated to LocationModel!
+2021-05-22 14:09:19 error: [POST] /api/v1/users >> StatusCode:: 409, Message:: Your email test@gmail.com already exists
+2021-05-22 14:10:24 error: [POST] /api/v1/clients >> StatusCode:: 409, Message:: Your email test@gmail.com already exists

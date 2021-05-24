@@ -1,16 +1,21 @@
-import { Sequelize, DataTypes, Model, Optional } from 'sequelize';
-import { Location } from '@/interfaces/location.interface';
+import { Sequelize, DataTypes, Model, Optional } from "sequelize";
+import { Location } from "@/interfaces/location.interface";
+import { ClientModel } from "./clients.model";
+import { EventModel } from "./events.model";
 
-export type LocationCreationAttributes = Optional<Location, 'LiveStreamID' | 'ClientID' | 'LiveStreamKey'>;
+export type LocationCreationAttributes = Optional<
+  Location,
+  "id" | "live_stream_id" | "client_id" | "live_stream_key"
+>;
 
-export class LocationModel extends Model<Location, LocationCreationAttributes> implements Location {
+export class LocationModel
+  extends Model<Location, LocationCreationAttributes>
+  implements Location
+{
   public id: number;
-  public ClientID: number;
-  public LiveStreamID: number;
-  public LiveStreamKey: string;
-
-  public readonly createdAt!: Date;
-  public readonly updatedAt!: Date;
+  public client_id: number;
+  public live_stream_id: number;
+  public live_stream_key: string;
 }
 
 export default function (sequelize: Sequelize): typeof LocationModel {
@@ -21,24 +26,28 @@ export default function (sequelize: Sequelize): typeof LocationModel {
         primaryKey: true,
         type: DataTypes.INTEGER,
       },
-      ClientID: {
+      client_id: {
         allowNull: false,
-        type: DataTypes.NUMBER,
+        type: DataTypes.INTEGER,
       },
-      LiveStreamID: {
-        allowNull: false,
-        type: DataTypes.NUMBER,
+      live_stream_id: {
+        allowNull: true,
+        type: DataTypes.TEXT,
+        unique: true,
       },
-      LiveStreamKey:{
-        allowNull:false,
-        type:DataTypes.STRING(256),
+      live_stream_key: {
+        allowNull: true,
+        type: DataTypes.TEXT,
       },
     },
     {
-      tableName: 'locations',
+      tableName: "locations",
       sequelize,
-    },
+      createdAt: false,
+      updatedAt: false,
+    }
   );
 
+  LocationModel.belongsTo(ClientModel, { foreignKey: "client_id" });
   return LocationModel;
 }

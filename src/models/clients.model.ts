@@ -1,9 +1,15 @@
-import { Sequelize, DataTypes, Model, Optional } from 'sequelize';
-import { Client } from '@/interfaces/client.interface';
+import { Sequelize, DataTypes, Model, Optional } from "sequelize";
+import { Client } from "@/interfaces/client.interface";
 
-export type ClientCreationAttributes = Optional<Client, 'id' | 'email' | 'password'>;
+export type ClientCreationAttributes = Optional<
+  Client,
+  "id" | "email" | "password"
+>;
 
-export class ClientModel extends Model<Client, ClientCreationAttributes> implements Client {
+export class ClientModel
+  extends Model<Client, ClientCreationAttributes>
+  implements Client
+{
   public id: number;
   public email: string;
   public password: string;
@@ -30,9 +36,9 @@ export default function (sequelize: Sequelize): typeof ClientModel {
       },
     },
     {
-      tableName: 'clients',
+      tableName: "clients",
       sequelize,
-    },
+    }
   );
 
   return ClientModel;
